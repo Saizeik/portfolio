@@ -8,7 +8,7 @@ import cityGuide from '/public/city-guide.jpg'
 
 
 
-export default const content = [
+export const content = [
   {
     title: 'Netflix',
     subtitle: 'Clone',
