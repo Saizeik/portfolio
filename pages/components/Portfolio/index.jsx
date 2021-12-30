@@ -53,11 +53,11 @@ const Portfolio = () => {
                   <LinkedinShareButton
                     className={styles.shareBtn}
                     url={"https://linkedin.com"}
-                    hashtag="#FrontedDeveloper"
+                    hashtag="#FrontendDeveloper"
                     quote={
                       "This is the text which you want to show when people share your portfolio!"
                     }
-                    hashtag="#FrontedDeveloper"
+                    
                   >
                     <FontAwesomeIcon
                       icon={linkedin}
