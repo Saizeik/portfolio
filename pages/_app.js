@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import "../styles/Home.module.css";
-import "/pages/components/About/About.module.scss";
+import "/components/About/About.module.scss";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS

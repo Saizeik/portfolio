@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import MainTitle from "/pages/components/Header/MainTitle.js";
+import MainTitle from "/components/Header/MainTitle.js";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
 
-import styles from "/pages/components/Header/Header.module.scss";
+import styles from "/components/Header/Header.module.scss";
 
 function Header() {
   const container = {

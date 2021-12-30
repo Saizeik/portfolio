@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "/pages/components/Resume/Resume.module.scss";
+import styles from "/components/Resume/Resume.module.scss";
 
 const Experience = () => {
   return (

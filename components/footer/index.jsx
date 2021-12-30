@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/pages/components/footer/footer.module.scss";
+import styles from "/components/footer/footer.module.scss";
 import { Link } from 'react-scroll'
 
 const Footer = () => {

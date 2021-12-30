@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TypingEffect from "./typeWriter.js";
-import styles from "/pages/components/About/About.module.scss";
+import styles from "/components/About/About.module.scss";
 
 const MyBackground = () => {
   const controls = useAnimation();

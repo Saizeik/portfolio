@@ -1,4 +1,4 @@
-import Main from "/pages/components/MainComponent.jsx";
+import Main from "/components/MainComponent.jsx";
 
 
 const home = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import styles from "/pages/components/About/About.module.scss";
+import styles from "/components/About/About.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import MyBackground from "./aboutMe.js"

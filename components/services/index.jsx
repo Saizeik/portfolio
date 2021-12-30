@@ -1,7 +1,7 @@
 import React from "react";
 import { servicesContent } from "./servicesContent";
 import styles from "./Services.module.scss";
-import Counter from "/pages/components/counter/index.jsx";
+import Counter from "/components/counter/index.jsx";
 const Services = () => {
   return (
     <div id="services" className="container-fluid">
