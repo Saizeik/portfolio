@@ -1,4 +1,4 @@
-export default const servicesContent = [
+export const servicesContent = [
   {
     title: "Web Development",
     description:
