@@ -35,32 +35,20 @@ function Header() {
       <div id="header" className={styles.header}>
         <div className={styles.imageColumn}>
           <div className={styles.imageContainer}>
+            <br></br>
             <motion.div
-              animate={{ x: [-1000, 0], y:50, rotate: 1080, duration: 10 }}
-              transition={{ type: "spring" }}
+              animate={{ x: 0, y: [-200, 90] }}
+              transition={{ type: "spring", bounce: 0.1 }}
             >
               <Image
-                className={styles.avatar}
-                src="/Scott.jpg"
-                alt="Author"
+                className={styles.Developer}
+                src="/webDeveloper.jpg"
+                alt="Computer Tools"
                 height={300}
                 width={300}
               />
             </motion.div>
           </div>
-          <br></br>
-          <motion.div
-            animate={{ x: 0, y: [-200, 90] }}
-            transition={{ type: "spring", bounce: 0.10 }}
-          >
-            <Image
-              className={styles.Developer}
-              src="/webDeveloper.jpg"
-              alt="Computer Tools"
-              height={300}
-              width={300}
-            />
-          </motion.div>
         </div>
 
         <Particles

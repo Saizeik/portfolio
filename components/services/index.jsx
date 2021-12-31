@@ -13,9 +13,11 @@ const Services = () => {
               {servicesContent.map((item, key) => (
                 <div className="col-md-4 col-sm-12" key={key}>
                   <div className={styles.serviceBox}>
-                    <span className={item.className}></span>
-                    <h5>{item.title}</h5>
-                    <p>{item.description}</p>
+                    <div class={`${styles.card} "card bg-light mb-3"`}>
+                      <span className={item.className}></span>
+                      <h5>{item.title}</h5>
+                      <p>{item.description}</p>
+                    </div>
                   </div>
                 </div>
               ))}

@@ -45,7 +45,7 @@ const Contacts = () => {
     <div id="contacts" className={styles.formWrapper}>
       <div className={styles.formContainer}>
         <div className={styles.formCardGradient}></div>
-        <h2>describe your project</h2>
+        <h2>Contact Me</h2>
         <span className={styles.successMessage}>{successMessage}</span>
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.textInput}>
@@ -92,7 +92,7 @@ const Contacts = () => {
             <textarea
               type="text"
               className={styles.textArea}
-              placeholder="Describe your project"
+              placeholder="Message"
               name="description"
               {...register("description", { required: true })}
             />

@@ -114,3 +114,13 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .form-wrapper {
+    background: linear-gradient(
+      180deg,
+      var(--main-black),
+      var(--main-light-black)
+    );
+  }
+}
