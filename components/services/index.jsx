@@ -13,7 +13,7 @@ const Services = () => {
               {servicesContent.map((item, key) => (
                 <div className="col-md-4 col-sm-12" key={key}>
                   <div className={styles.serviceBox}>
-                    <div class={`${styles.card} "card bg-light mb-3"`}>
+                    <div className={`${styles.card} "card bg-light mb-3"`}>
                       <span className={item.className}></span>
                       <h5>{item.title}</h5>
                       <p>{item.description}</p>
