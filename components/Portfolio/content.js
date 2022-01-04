@@ -5,6 +5,7 @@ import taskManager from '/public/task-manager.jpg'
 import mernBlog from '/public/mern-blog.jpg'
 import mercury from '/public/mercury.jpg'
 import cityGuide from '/public/city-guide.jpg'
+import nucampsite from '/public/nucampsite.jpg'
 
 
 
@@ -59,4 +60,12 @@ export const content = [
     github: 'https://city-guide.git',
     demo: 'https://city-guide.com',
   },
+  {
+  title: 'Nucampsite',
+    subtitle: 'Nucamp Project',
+    Image: Nucampsite,
+    src : '/public/nucampsite.jpg',
+    github: 'https://github.com/Saizeik/Nucampsite',
+    demo: 'https://nathanwalkernucamp.netlify.app',
+  }
 ]
