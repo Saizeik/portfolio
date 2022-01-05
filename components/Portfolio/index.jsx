@@ -24,7 +24,8 @@ const linkedin = findIconDefinition({ prefix: "fab", iconName: "linkedin" });
 const Portfolio = () => {
   return (
     <div id="portfolio" className="container-fluid">
-      <h1 className = {styles.h1}
+      <h1
+        className={styles.h1}
         style={{
           textAlign: "center",
           fontWeight: "900",
@@ -37,91 +38,96 @@ const Portfolio = () => {
       </h1>
 
       <section className={styles.grid.row}>
-        <div className ='grid row'>
-        {content.map((item, key) => (
-          <div
-            key={key}
-            className="col-md-6 col-sm-12 d-flex justify-content-center"
-          >
-            <figure className={styles.effect}>
-              <Image src={item.Image} alt={item.title} />
-              <figcaption>
-                <h2>
-                  {item.title}&nbsp;&nbsp;<span>{item.subtitle}</span>
-                </h2>
-                <p className={styles.iconLinks}>
-                  <LinkedinShareButton
-                    className={styles.shareBtn}
-                    url={"https://linkedin.com"}
-                    hashtag="#FrontendDeveloper"
-                    quote={
-                      "This is the text which you want to show when people share your portfolio!"
-                    }
-                    
+        <div className="grid row">
+          {content.map((item, key) => (
+            <div
+              key={key}
+              className="col-md-6 col-sm-12 d-flex justify-content-center"
+            >
+              <figure className={styles.effect}>
+                <a href = {item.demo} target ="blank">
+                <Image src={item.Image}  alt={item.title}/>
+                </a>
+                
+                <figcaption>
+                  <h2>
+                    {item.title}&nbsp;&nbsp;<span>{item.subtitle}</span>
+                  </h2>
+                  <p className={styles.iconLinks}>
+                    <LinkedinShareButton
+                      className={styles.shareBtn}
+                      url={"https://linkedin.com"}
+                      hashtag="#FrontendDeveloper"
+                      quote={
+                        "This is the text which you want to show when people share your portfolio!"
+                      }
+                    >
+                      <FontAwesomeIcon
+                        icon={linkedin}
+                        className="fab fa-linkedin"
+                      />
+                    </LinkedinShareButton>
+                    <RedditShareButton
+                      className={styles.shareBtn}
+                      url={"https://linkedin.com"}
+                      quote={
+                        "This is the text which you want to show when people share your portfolio!"
+                      }
+                      hashtag="#FrontedDeveloper"
+                    >
+                      <FontAwesomeIcon
+                        icon={reddit}
+                        className="fab fa-reddit"
+                      />
+                    </RedditShareButton>
+                    <TwitterShareButton
+                      className={styles.shareBtn}
+                      url={"https://twitter.com"}
+                      quote={
+                        "This is the text which you want to show when people share your portfolio!"
+                      }
+                      hashtag="#FrontedDeveloper"
+                    >
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={twitter}
+                        className="fab fa-twitter"
+                      />
+                    </TwitterShareButton>
+                    <FacebookShareButton
+                      className={styles.shareBtn}
+                      url={"https://facebook.com"}
+                      quote={
+                        "This is the text which you want to show when people share your portfolio!"
+                      }
+                      hashtag="#FrontedDeveloper"
+                    >
+                      <FontAwesomeIcon
+                        icon={facebook}
+                        className="fab fa-facebook"
+                      />
+                    </FacebookShareButton>
+                  </p>
+                  <div
+                    className={styles.description}
+                    style={{ float: "left", padding: "0.5rem 1rem" }}
                   >
-                    <FontAwesomeIcon
-                      icon={linkedin}
-                      className="fab fa-linkedin"
-                    />
-                  </LinkedinShareButton>
-                  <RedditShareButton
-                    className={styles.shareBtn}
-                    url={"https://linkedin.com"}
-                    quote={
-                      "This is the text which you want to show when people share your portfolio!"
-                    }
-                    hashtag="#FrontedDeveloper"
-                  >
-                    <FontAwesomeIcon icon={reddit} className="fab fa-reddit" />
-                  </RedditShareButton>
-                  <TwitterShareButton
-                    className={styles.shareBtn}
-                    url={"https://twitter.com"}
-                    quote={
-                      "This is the text which you want to show when people share your portfolio!"
-                    }
-                    hashtag="#FrontedDeveloper"
-                  >
-                    {" "}
-                    <FontAwesomeIcon
-                      icon={twitter}
-                      className="fab fa-twitter"
-                    />
-                  </TwitterShareButton>
-                  <FacebookShareButton
-                    className={styles.shareBtn}
-                    url={"https://facebook.com"}
-                    quote={
-                      "This is the text which you want to show when people share your portfolio!"
-                    }
-                    hashtag="#FrontedDeveloper"
-                  >
-                    <FontAwesomeIcon
-                      icon={facebook}
-                      className="fab fa-facebook"
-                    />
-                  </FacebookShareButton>
-                </p>
-                <div
-                  className={styles.description}
-                  style={{ float: "left", padding: "0.5rem 1rem" }}
-                >
-                  <span>
-                    DEMO:
-                    <a href="#" className={styles.demoLinks}>
-                      {item.demo}
-                    </a>
-                    <br />
-                    GITHUB:
-                    <a href="#" className={styles.demoLinks}>
-                      {item.github}
-                    </a>
-                  </span>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        ))}
+                    <span>
+                      DEMO:
+                      <a href= {item.demo} target="blank"  className={styles.demoLinks}>
+                        {item.demo}
+                      </a>
+                      <br />
+                      GITHUB:
+                      <a href= {item.github} className={styles.demoLinks}>
+                        {item.github}
+                      </a>
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          ))}
         </div>
       </section>
     </div>

@@ -65,6 +65,7 @@ export const content = [
     subtitle: 'Nucamp Project',
     Image: nucampsite,
     src : '/public/nucampsite.jpg',
+    
     github: 'https://github.com/Saizeik/Nucampsite',
     demo: 'https://nathanwalkernucamp.netlify.app',
   }
