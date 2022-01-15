@@ -1,108 +1,107 @@
 .mainServicesWrapper {
   background: #295270;
-    height: 100%;
-  }
-  
-  .servicesWrapper {
-    padding: 10rem 0 0;
-  }
-  
-  .servicesWrapper h1 {
-    text-transform: uppercase;
-    color: #4ab;
-    text-align: center;
-    font-weight: 900;
-    margin-bottom: 5rem;
-    font-family: 'Playfair Display', serif;
-  }
+  height: 100%;
+}
 
-  
-  .iconWeBDev::before {
-    font-family: 'Font Awesome 5 Pro';
-    content: '\f1c9';
-    font-size: 1.7em;
-    color: tomato;
-  }
-  
-  .iconDesign::before {
-    font-family: 'Font Awesome 5 Pro';
-    content: '\f5ae';
-    font-size: 1.7em;
-    color: tomato;
-  }
-  
-  .iconGoogleAdwords::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f1a0';
-    font-size: 1.7em;
-    color: tomato;
-  }
-  
-  .iconSmm::before {
-    font-family: 'Font Awesome 5 Pro';
-    content: '\f0c0';
-    font-size: 1.7em;
-    color: tomato;
-  }
-  
-  .iconAppDev::before {
-    font-family: 'Font Awesome 5 Pro';
-    content: '\f3cd';
-    font-size: 1.7em;
-    color: tomato;
-  }
-  
-  .iconSupport::before {
-    font-family: 'Font Awesome 5 Pro';
-    content: '\f2a0';
-    font-size: 1.7em;
-    color: tomato;
-  }
-  
-  .serviceBox{
-    width: 18rem;
-    display: grid;
-    justify-content: center;
-    padding: 1.5rem;
-    margin:10px;
-    border-radius:10px;
-    height: 14rem;
-    text-align: center;
-    background: #fff;
-    border-bottom: 2px solid tomato;
-  }
+.servicesWrapper {
+  padding: 10rem 0 0;
+}
 
-  .card{
+.servicesWrapper h1 {
+  text-transform: uppercase;
+  color: #4ab;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.iconWeBDev::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f1c9";
+  font-size: 1.7em;
+  color: tomato;
+}
+
+.iconDesign::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f5ae";
+  font-size: 1.7em;
+  color: tomato;
+}
+
+.iconGoogleAdwords::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f1a0";
+  font-size: 1.7em;
+  color: tomato;
+}
+
+.iconSmm::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f0c0";
+  font-size: 1.7em;
+  color: tomato;
+}
+
+.iconAppDev::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f3cd";
+  font-size: 1.7em;
+  color: tomato;
+}
+
+.iconSupport::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f2a0";
+  font-size: 1.7em;
+  color: tomato;
+}
+
+.serviceBox {
+  width: 18rem;
+  display: grid;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 10px;
+  border-radius: 10px;
+  height: 14rem;
+  text-align: center;
+  background: #fff;
+  border-bottom: 2px solid tomato;
+}
+
+.card {
   max-width: 18rem;
+}
+
+.servicesWrapper .row .col-md-4 {
+  margin-bottom: 3rem;
+}
+
+.serviceBox span {
+  margin-bottom: 1rem;
+}
+.serviceBox:hover {
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(195, 205, 252, 0.7);
+}
+
+.serviceBox h5 {
+  font-weight: 800;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(195, 205, 252, 0.7);
+    -webkit-box-shadow: 0 0 0 0 rgba(195, 247, 252, 0.7);
   }
-  
-  .servicesWrapper .row .col-md-4 {
-    margin-bottom: 3rem;
+  70% {
+    box-shadow: 0 0 0 10px rgba(195, 205, 252, 0);
+    -webkit-box-shadow: 0 0 0 10x rgba(195, 205, 252, 0);
   }
-  
-  .serviceBox span {
-    margin-bottom: 1rem;
+  100% {
+    box-shadow: 0 0 0 0 rgba(195, 205, 252, 0);
+    -webkit-box-shadow: 0 0 0 0 rgba(195, 205, 252, 0);
   }
-  .serviceBox:hover{
-    animation: pulse 2s infinite;
-    box-shadow: 0 0 0 rgba(195, 205, 252, 0.7);
-  }
-  
-  .serviceBox h5 {
-    font-weight: 800;
-  }
-  
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 rgba(195, 205, 252, 0.7);
-      -webkit-box-shadow: 0 0 0 0 rgba(195, 247, 252, 0.7);
-    }
-    70% {
-      box-shadow: 0 0 0 10px rgba(195, 205, 252, 0);
-      -webkit-box-shadow: 0 0 0 10x rgba(195, 205, 252, 0);
-    }
-    100% {
-      box-shadow: 0 0 0 0 rgba(195, 205, 252, 0);
-      -webkit-box-shadow: 0 0 0 0 rgba(195, 205, 252, 0);
-    }
-  }
+}
