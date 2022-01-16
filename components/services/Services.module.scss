@@ -1,7 +1,7 @@
 .mainServicesWrapper {
   background: #295270;
   height: 100%;
-  max-width:100%;
+  max-width: 100%;
   min-width: auto;
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   font-weight: 900;
   margin-bottom: 5rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Bangers', cursive, serif;
 }
 
 .iconWeBDev::before {
@@ -105,5 +105,82 @@
   100% {
     box-shadow: 0 0 0 0 rgba(195, 205, 252, 0);
     -webkit-box-shadow: 0 0 0 0 rgba(195, 205, 252, 0);
+  }
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .mainServicesWrapper,
+  .servicesWrapper,
+  .card,
+  .serviceBox,
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .mainServicesWrapper {
+    height: auto;
+
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }

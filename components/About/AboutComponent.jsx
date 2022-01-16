@@ -25,7 +25,7 @@ import {
 
 const About = () => {
   return (
-    <section id="about" className="about">
+    <section id="about" className={styles.about}>
       <div className="container">
         <h1 className={styles.h1}>ABOUT ME</h1>
         <div className="row">

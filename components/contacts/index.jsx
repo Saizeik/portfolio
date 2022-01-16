@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styles from "./contacts.module.scss";
 //import emailjs from 'emailjs-com';
 import { useForm } from "react-hook-form";
+import "animate.css";
+import envelope from "./envelope.png";
+import Image from "next/image";
 
 // EMAILJS
 const service_ID = "service_859vvsp";
@@ -100,10 +103,22 @@ const Contacts = () => {
               <span className={styles.InputError}>This field is required</span>
             )}
           </div>
-          <button className={styles.button}>SEND</button>
+          <button id="send" className={styles.button}>
+            SEND
+          </button>
         </form>
+        <Image
+          src={envelope}
+          className={`${styles.envelope}"animate__animated.animate__rollOut"`}
+          id="envelope"
+          a
+          href="./envelope.png"
+          height="150"
+          width="150"
+        />
       </div>
-      <script defer
+      <script
+        defer
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
       >

@@ -1,12 +1,7 @@
-
-
-  .display-grid {
-    
-    width: 100%;
-    flex-direction: column;
-  } 
-
-
+.display-grid {
+  max-width: 100%;
+  flex-direction: column;
+}
 
 .avatar {
   width: 10rem;
@@ -14,15 +9,12 @@
   align-self: flex-end;
   z-index: 1;
   border-radius: 50%;
-  }
-  
-.Developer{
-
-justify-self: center;
-border-radius: 10%;
-
 }
 
+.Developer {
+  justify-self: center;
+  border-radius: 10%;
+}
 
 .header {
   display: grid;
@@ -30,16 +22,17 @@ border-radius: 10%;
   align-items: center;
   max-width: 100%;
   height: 100vh;
-  min-width: fit-content;
-  
+  background-size: cover;
+
   background: #295270;
 }
 
 #main-title {
-    padding: 2rem;
-    align-self: flex-start;
-    width: 43.75rem;
-  }
+  padding: 2rem;
+  align-self: flex-start;
+  width: 43.75rem;
+  max-width: 100%;
+}
 
 .imageColumn {
   text-align: center;
@@ -63,15 +56,57 @@ border-radius: 10%;
   margin: 0.7rem;
 }
 
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 /******************** MEDIA QUERY ****************************/
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu,
+  .main,
+  .right {
     width: 100%;
   }
 }
-
 
 @media (max-width: 670px) {
   #main-title {
@@ -88,5 +123,40 @@ border-radius: 10%;
     width: 20px;
     height: 20px;
     margin: 0.7rem;
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .display-flex,
+  .display-grid,
+  .ul,
+  .li,
+  .avatar,
+  .Developer,
+  .header,
+  #main-title,
+  .imageColumn,
+  .imageContainer,
+  .iconsWrapper,
+  .item .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }

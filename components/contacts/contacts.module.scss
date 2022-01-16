@@ -17,6 +17,7 @@
   background: var(--white);
   border-radius: 0.1875rem;
   box-shadow: 0 0.125rem 0.625rem rgba(17, 34, 68, 0.06);
+  animation: slideInFromLeft 3s;
 }
 
 .formCardGradient {
@@ -31,6 +32,7 @@
   color: #ffff;
   text-transform: uppercase;
   font-weight: 400;
+  font-family: 'Bangers', cursive;
 }
 
 .form {
@@ -79,15 +81,13 @@
 .button {
   display: block;
   width: 100%;
-  background: linear-gradient(
-    to bottom left,
-    #00afb9
-  );
+  background: linear-gradient(to bottom left, #00afb9);
   border: none;
   border-radius: 0.1875rem;
   padding: 0.5rem 0;
   font-size: 1rem;
   font-weight: 700;
+  font-family:'Bangers', cursive; 
   color: var(--white);
 }
 
@@ -107,6 +107,56 @@
   font-weight: 700;
   justify-self: center;
 }
+.envelope{
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation:"rollOut";
+  margin: 0 0.5rem;
+  --animate-duration: 5s;
+  
+}
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
 
 /******************* MEDIA QUERY **************************/
 @media (max-width: 670px) {
@@ -114,13 +164,34 @@
     width: 100%;
   }
 }
-
+/* Tablets and under */
 @media (max-width: 768px) {
-  .form-wrapper {
-    background: linear-gradient(
-      180deg,
-      var(--main-black),
-      var(--main-light-black)
-    );
+  .root,
+  .formWrapper,
+  .formContainer,
+  .formContainer h2,
+  .form,
+  .textInput,
+  .placeholder,
+  .textArea,
+  .button,
+  .inputError,
+  .successMessage,
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .formContainer {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .formContainer {
+    height: 110px;
+    width: 300px;
+    flex-direction: column;
   }
 }

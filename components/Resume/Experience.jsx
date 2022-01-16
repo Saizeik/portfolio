@@ -104,11 +104,13 @@ const Experience = () => {
                       </h5>
                       <h6 className={styles.resume.h6}>2021</h6>
                       <p className={styles.p}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Veniam quia incidunt doloribus? Corporis ipsa nesciunt
-                        iusto provident, doloremque adipisci molestias iure, ut
-                        natus exercitationem consectetur, facilis id recusandae
-                        odio ea!
+                        Over the course of 22 weeks a complete website was
+                        developed, involving frontend and backend, a mobile app
+                        designed for the mobile user using React-Native. A
+                        backend server was built using MongoDB and Express to
+                        handle fetching and storing data. A user can schedule a
+                        campsite reservation, post and view comments, and give a
+                        rating based on their experience at the campsite.
                       </p>
                     </div>
                   </div>

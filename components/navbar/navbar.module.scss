@@ -1,35 +1,103 @@
-.display-flex{
-    display:flex;
-
+.display-flex {
+  display: flex;
 }
 
-.display-grid{
-    display: grid;
+.display-grid {
+  display: grid;
 
-    
-    &--column{
-      grid-auto-flow:column;  
-    }
+  &--column {
+    grid-auto-flow: column;
+  }
 }
 
-
-.navLink{
-    justify-content: space-between;
-    color: white;
-    font-weight: bold;
-    font-size:18px;
-    font-family: 'Anton', sans-serif;
-    
+.navLink {
+  justify-content: space-between;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+  
 }
-.ul{
-    color: white;
-    font-weight: bold;
-    font-size:14px;
+.ul {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+ 
 }
 
-.li{
-    color: white;
-    font-weight: bold;
-    font-size:14px;
+.li {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+ 
+  
+}
 
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .display-flex,
+  .display-grid,
+  .navLink,
+  .ul,
+  .li {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }

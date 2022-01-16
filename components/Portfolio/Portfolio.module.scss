@@ -1,166 +1,245 @@
 .grid {
-    position: absolute;
-    margin: 0 auto;
-    padding: 1em 0 4em;
-    max-width: 100%;
-    height: 56.25rem;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .grid figure {
-    margin: 1rem;
-    position: relative;
-    float: left;
-    overflow: hidden;
-    min-width: 20rem;
-    max-width: 30rem;
-    max-height: 16.125rem;
-    text-align: center;
-  }
-  
-  .grid figure Image {
-    position: relative;
-    display: block;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
+  position: absolute;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 100%;
+  height: 56.25rem;
+  list-style: none;
+  text-align: center;
+
+}
+
+.grid figure {
+  margin: 1rem;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  min-width: 20rem;
+  max-width: 30rem;
+  max-height: 16.125rem;
+  text-align: center;
+}
+
+.grid figure Image {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.h1 {
+  font-family: 'Bangers', cursive, serif;
+  animation: slideInFromLeft 2s;
+}
+
+.grid figure figcaption {
+  padding: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  backface-visibility: hidden;
+}
+
+figure.effect figcaption {
+  position: relative;
+  margin-top: -4rem;
+  padding: 0.5em;
+  height: 4rem;
+  background: linear-gradient(#023047, #61a5c2);
+  color: #ffff;
+  transition: transform 0.35s;
+  transform: translate3d(0, 100%, 0);
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 800;
+}
+
+.grid figure h2 span {
+  font-weight: 300;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 0.0625rem;
+  font-size: 68.5%;
+}
+
+figure.effect h2 {
+  float: left;
+}
+
+figure.effect p.iconLinks .shareBtn {
+  float: right;
+  color: #fff;
+  font-size: 1.4em;
+}
+
+figure.effect p.description {
+  position: relative;
+  bottom: 5em;
+  color: #fff;
+  text-transform: none;
+  font-size: 90%;
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: opacity 0.35s;
+}
+
+figure.effect h2,
+figure.effect p.iconLinks .shareBtn {
+  transition: transform 0.35s;
+  transform: translate3d(0, 200%, 0);
+}
+
+figure.effect:hover figcaption,
+figure.effect:hover h2,
+figure.effect:hover p.iconLinks .shareBtn {
+  transform: translate3d(0, 0, 0);
+}
+
+.iconFacebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e";
+}
+
+.iconTwitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+
+.iconLinkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f0e1";
+}
+
+.iconReddit::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f281";
+}
+
+figure.effect p.iconLinks .shareBtn span::before {
+  display: inline-block;
+  padding: 0.5rem 0.625rem;
+}
+
+figure.effect:hover p.iconLinks .shareBtn:hover,
+figure.effect:hover p.iconLinks .shareBtn:focus {
+  color: #252d31 !important;
+}
+
+figure.effect:hover p.iconLinks .shareBtn:nth-child(3) {
+  transition-delay: 0.15s;
+}
+
+figure.effect:hover p.iconLinks .shareBtn:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+figure.effect:hover p.iconLinks .shareBtn:first-child {
+  transition-delay: 0.2s;
+}
+
+figure.effect:hover h2 {
+  transition-delay: 0.06s;
+}
+
+figure.effect:hover p.description {
+  opacity: 1;
+  background: linear-gradient(#023047, #61a5c2);
+  position: absolute;
+}
+
+.demoLinks {
+  text-decoration: none;
+  color: #3c4a50;
+}
+
+.demoLinks:hover {
+  color: #fff;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
   }
 
-  .h1{
-    font-family: 'Playfair Display', serif;
+  100% {
+    transform: translateX(0);
   }
-  
-  .grid figure figcaption {
-    padding: 1em;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1em;
-    backface-visibility: hidden;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
   }
-  
-  figure.effect figcaption {
-    position: relative;
-    margin-top: -4rem;
-    padding: 0.5em;
-    height: 4rem;
-    background: linear-gradient(#023047,#61a5c2);
-    color: #ffff;
-    transition: transform 0.35s;
-    transform: translate3d(0, 100%, 0);
+
+  100% {
+    transform: translateX(0);
   }
-  
-  .grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 800;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
   }
-  
-  .grid figure h2 span {
-    font-weight: 300;
+
+  100% {
+    transform: translateX(0);
   }
-  
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .grid figure,
+  .grid figure Image,
+  .h1,
   .grid figure h2,
-  .grid figure p {
-    margin: 0;
+  .grid figure p .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-  
-  .grid figure p {
-    letter-spacing: 0.0625rem;
-    font-size: 68.5%;
+
+  .grid {
+    height: auto;
+
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
   }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .grid{
+    height: 110px;
+    width: 300px;
   
-  figure.effect h2 {
-    float: left;
-  }
+    flex-direction: column;
   
-  figure.effect p.iconLinks .shareBtn {
-    float: right;
-    color: #fff;
-    font-size: 1.4em;
-  }
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
   
-  figure.effect p.description {
-    position: relative;
-    bottom: 5em;
-    color: #fff;
-    text-transform: none;
-    font-size: 90%;
-    opacity: 0;
-    backface-visibility: hidden;
-    transition: opacity 0.35s;
-  }
-  
-  figure.effect h2,
-  figure.effect p.iconLinks .shareBtn {
-    transition: transform 0.35s;
-    transform: translate3d(0, 200%, 0);
-  }
-  
-  figure.effect:hover figcaption,
-  figure.effect:hover h2,
-  figure.effect:hover p.iconLinks .shareBtn {
-    transform: translate3d(0, 0, 0);
-  }
-  
-  .iconFacebook::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f39e';
-    
-  }
-  
-  .iconTwitter::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f099';
-  }
-  
-  .iconLinkedin::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f0e1';
-  }
-  
-  .iconReddit::before {
-    font-family: 'Font Awesome 5 Brands';
-    content: '\f281';
-  }
-  
-  figure.effect p.iconLinks .shareBtn span::before {
-    display: inline-block;
-    padding: 0.5rem 0.625rem;
-  }
-  
-  figure.effect:hover p.iconLinks .shareBtn:hover,
-  figure.effect:hover p.iconLinks .shareBtn:focus {
-    color: #252d31 !important;
-  }
-  
-  figure.effect:hover p.iconLinks .shareBtn:nth-child(3) {
-    transition-delay: 0.15s;
-  }
-  
-  figure.effect:hover p.iconLinks .shareBtn:nth-child(2) {
-    transition-delay: 0.15s;
-  }
-  
-  figure.effect:hover p.iconLinks .shareBtn:first-child {
-    transition-delay: 0.2s;
-  }
-  
-  figure.effect:hover h2 {
-    transition-delay: 0.06s;
-  }
-  
-  figure.effect:hover p.description {
-    opacity: 1;
-    background: linear-gradient(#023047,#61a5c2);
-    position: absolute;
-  }
-  
-  .demoLinks {
-    text-decoration: none;
-    color: #3c4a50;
-  }
-  
-  .demoLinks:hover {
-    color: #fff;
-  }
-  
+}
+}
