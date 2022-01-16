@@ -1,4 +1,20 @@
+.display-flex{
+    display:flex;
+
+}
+
+.display-grid{
+    display: grid;
+
+    
+    &--column{
+      grid-auto-flow:column;  
+    }
+}
+
+
 .navLink{
+    justify-content: space-between;
     color: white;
     font-weight: bold;
     font-size:18px;

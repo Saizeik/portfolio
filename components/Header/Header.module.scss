@@ -1,6 +1,7 @@
 
 
-  .grid {
+  .display-grid {
+    
     width: 100%;
     flex-direction: column;
   } 
@@ -27,8 +28,10 @@ border-radius: 10%;
   display: grid;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  max-width: 100%;
   height: 100vh;
+  min-width: fit-content;
+  
   background: #295270;
 }
 
