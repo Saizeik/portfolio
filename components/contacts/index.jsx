@@ -69,10 +69,29 @@ const Contacts = () => {
   useEffect(() => {
     window.onload = function () {
       if (typeof window !== "undefined") {
+        let buttons = document.querySelector("#buttons");
+        let littleEmail = document.querySelector("#littleEmail");
+        const SendButton = () => {
+          buttons.addEventListener("click", SendButton);
+
+          littleEmail.classList.add("animate__animated", "animate__tada");
+
+          setTimeout(function () {
+            littleEmail.classList.remove("animate__animated", "animate__tada");
+          }, 5000);
+        };
+        SendButton();
+      }
+    };
+  });
+
+  useEffect(() => {
+    window.onload = function () {
+      if (typeof window !== "undefined") {
         let forms = document.querySelector("#form");
         let envelope = document.querySelector("#envelope");
 
-        const SentMessage = (event) => {
+        const SentMessage = () => {
           forms.addEventListener("submit", SentMessage);
           envelope.style.visibility = "visible";
 
@@ -120,21 +139,13 @@ const Contacts = () => {
         src={emails}
         className={styles.emails}
         id="emails"
+        alt="mailbox with mail feeding through"
         a
         href="./Email.png"
         height="300"
         width="300"
       />
 
-      <Image
-        src={littleEmail}
-        className={styles.littleEmail}
-        id="littleEmail"
-        a
-        href="./email.png"
-        height="100"
-        width="100"
-      />
       <div className={styles.formContainer}>
         <div className={styles.formCardGradient}></div>
         <h2>Contact Me</h2>
@@ -144,6 +155,7 @@ const Contacts = () => {
             src={envelope}
             className={styles.envelope}
             id="envelope"
+            alt="Post Card for send animation"
             a
             href="./envelope.png"
             height="150"
@@ -161,7 +173,6 @@ const Contacts = () => {
               type="name"
               placeholder="Name"
               name="name"
-              onkeyup="showEnvelope"
               onChange={HandleChange}
               {...register("name", { required: true, pattern: "[A-Za-z]{3,}" })}
             />
@@ -174,7 +185,6 @@ const Contacts = () => {
               type="email"
               placeholder="Email"
               name="email"
-              onkeyup="showEnvelope"
               onChange={HandleChange}
               {...register("email", {
                 required: true,
@@ -194,7 +204,6 @@ const Contacts = () => {
               type="subject"
               placeholder="Subject"
               name="subject"
-              onkeyup="showEnvelope"
               onChange={HandleChange}
               {...register("subject", {
                 required: true,
@@ -211,7 +220,6 @@ const Contacts = () => {
               className={styles.textArea}
               placeholder="Message"
               name="description"
-              onkeyup="showEnvelope"
               onChange={HandleChange}
               {...register("description", {
                 required: true,
@@ -223,7 +231,17 @@ const Contacts = () => {
             )}
           </div>
           <div className={styles.buttonWrapper}>
-            <button id="buttons" onclick="click" className={styles.buttons}>
+            <button id="buttons" className={styles.buttons}>
+              <Image
+                src={littleEmail}
+                className={styles.littleEmail}
+                id="littleEmail"
+                alt="little email icon"
+                a
+                href="./email.png"
+                height="100"
+                width="100"
+              />
               SEND
             </button>
           </div>

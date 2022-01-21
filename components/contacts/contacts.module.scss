@@ -44,14 +44,13 @@
 .formContainer h2 {
   justify-self: center;
   margin: 2rem 0 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   background: linear-gradient(#023047, #61a5c2);
   color: #ffff;
   text-transform: uppercase;
   font-weight: 400;
-  
+
   font-family: "Bangers", cursive;
- 
 }
 
 .form {
@@ -97,7 +96,7 @@
   height: 8rem;
 }
 
-.buttons{
+.buttons {
   display: block;
   width: 100%;
 
@@ -107,21 +106,17 @@
   font-size: 1rem;
   font-family: "Bangers", cursive;
   font-weight: bold;
-  
+
   text-align: center;
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  
-  
+
   outline: none;
 
- 
   transition: background-color 250ms ease-in, border 250ms ease-in;
   cursor: pointer;
   padding: 2rem 3rem;
-
- 
 
   transition: background-color 250ms ease-in, border 250ms ease-in;
   cursor: pointer;
@@ -145,89 +140,77 @@
 #envelope {
   display: inline-block;
   margin: 0 0.5rem;
- 
-  
-  .animate__animated_animate__tada{
+
+  .animate__animated_animate__tada {
     --animate-duration: 3s;
-
   }
-  
 }
-.envelope{
+.envelope {
   animation: animate 10s ease-in forwards;
-  
-  
 }
 
-#envelope
-
-.sendAnimation{
+#envelope .sendAnimation {
   animation: rollOut 6s ease-in forwards;
-  display: inline-block 
+  display: inline-block;
 }
-
 
 .btnAnimation {
   animation: animate 4s ease-in forwards;
 }
 
-
 .emails {
-  position:absolute; 
-  top:0;
-  left:0;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 40px;
   line-height: 40px;
   font-size: 36px;
-  color: rgb(255,0,0);
+  color: rgb(255, 0, 0);
   animation: leafanimation 6s linear;
-  }
-  
-  .emails div {
+}
+
+.emails div {
   display: inline-block;
   width: 20px;
   height: 40px;
   vertical-align: middle;
-  background-color: rgb(255,0,0);
+  background-color: rgb(255, 0, 0);
   border-radius: 20px;
-  }
-  
-  
-  .littleEmail{
-  
-    display: inline-block;
-    position:absolute; 
-  top:0;
-  left:0;
+}
+
+.littleEmail {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
   justify-self: right;
   height: 40px;
   line-height: 40px;
   font-size: 36px;
-  color: rgb(255,0,0);
+  color: rgb(255, 0, 0);
   animation: leafanimation 6s linear;
-  }
+}
 
 /* Animations */
 
 @keyframes animate {
   0% {
-    
     color: white;
     width: 16rem;
   }
   5% {
     width: 8rem;
-    
+
     border: 8px solid var(--clr-accent100);
-    background-color: linear-gradient(#023047, #61a5c2);;
+    background-color: linear-gradient(#023047, #61a5c2);
   }
   25% {
     border: 8px solid var(--clr-accent200);
-    background-color:#2979ff ;
+    background-color: #2979ff;
   }
   55% {
     border: 8px solid var(--clr-accent300);
-    background-color:#91f2d2 ;
+    background-color: #91f2d2;
   }
   75% {
     border: 8px solid var(--clr-accent400);
@@ -235,7 +218,7 @@
   }
   82% {
     border: 8px solid var(--clr-primary);
-    background-color: #651fff
+    background-color: #651fff;
   }
 
   88% {
@@ -243,32 +226,28 @@
   }
 
   100% {
-    
     color: transparent;
     width: 8rem;
     background-color: transparent;
- 
   }
 }
 
 @keyframes rollOut {
-0% {
-  
-  opacity: 1;
-  transform: translateX(0px) rotate(0deg);
-}
+  0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg);
+  }
 
-50%{
-  opacity: .5;
-  transform: translateX(50%) rotate(60deg);
-}
+  50% {
+    opacity: 0.5;
+    transform: translateX(50%) rotate(60deg);
+  }
 
-100% {
-  opacity: 0;
-  transform: translateX(100%) rotate(120deg);
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(120deg);
+  }
 }
-}
-
 
 @keyframes slideInFromLeft {
   0% {
@@ -310,18 +289,33 @@
   }
 }
 
-
 /**********************Key Frames Leaf Animation **************************/
 @keyframes leafanimation {
-         0% {transform:translate(900px,500px) rotate(0deg); color:rgba(255,0,0,0);}
-        20% {transform:translate(850px,450px) rotate(360deg); color:rgba(255,0,0,0);}
-        40% {transform:translate(450px,200px) rotate(720deg); color:rgba(255,0,0,0);}
-        60% {transform:translate(100px,100px) rotate(1080deg); color:rgba(255,0,0,0);}
-        80% {transform:translate(0,0) rotate(1440deg); color:rgba(255,0,0,0);}
-       100% {transform:translate(0,0) rotate(1440deg); color:rgba(255,0,0,1);}
+  0% {
+    transform: translate(900px, 500px) rotate(0deg);
+    color: rgba(255, 0, 0, 0);
+  }
+  20% {
+    transform: translate(850px, 450px) rotate(360deg);
+    color: rgba(255, 0, 0, 0);
+  }
+  40% {
+    transform: translate(450px, 200px) rotate(720deg);
+    color: rgba(255, 0, 0, 0);
+  }
+  60% {
+    transform: translate(100px, 100px) rotate(1080deg);
+    color: rgba(255, 0, 0, 0);
+  }
+  80% {
+    transform: translate(0, 0) rotate(1440deg);
+    color: rgba(255, 0, 0, 0);
+  }
+  100% {
+    transform: translate(0, 0) rotate(1440deg);
+    color: rgba(255, 0, 0, 1);
+  }
 }
-
-
 
 /******************* MEDIA QUERY **************************/
 @media (max-width: 670px) {

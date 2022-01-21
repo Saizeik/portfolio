@@ -6,92 +6,95 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+        <div className="container-fluid">
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto">
-              <li className="nav-item active">
-                <Link
-                  smooth={true}
-                  to="header"
-                  className={styles.navLink}
-                  href="#"
-                >
-                  <strong>Home</strong>{" "}
-                  <span className="sr-only">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to="about"
-                  offset={-55}
-                  className={styles.navLink}
-                  href="#"
-                >
-                  <strong>About Me</strong>
-                </Link>
-              </li>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav m-auto">
+                <li className="nav-item active">
+                  <Link
+                    smooth={true}
+                    to="header"
+                    className={styles.navLink}
+                    href="#"
+                  >
+                    <strong>Home</strong>{" "}
+                    <span className="sr-only">(current)</span>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to="about"
+                    offset={-55}
+                    className={styles.navLink}
+                    href="#"
+                  >
+                    <strong>About Me</strong>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to="resume"
-                  offset={-55}
-                  className={styles.navLink}
-                  href="#"
-                >
-                  <strong>Resume</strong>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to="portfolio"
-                  offset={-55}
-                  className={styles.navLink}
-                  href="#"
-                >
-                  <strong>Portfolio</strong>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to="services"
-                  offset={-55}
-                  className={styles.navLink}
-                  href="#"
-                >
-                  <strong>Services</strong>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  smooth={true}
-                  to="contacts"
-                  offset={-55}
-                  className={styles.navLink}
-                  href="#"
-                >
-                  <strong>Contacts</strong>
-                </Link>
-              </li>
-            </ul>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to="resume"
+                    offset={-55}
+                    className={styles.navLink}
+                    href="#"
+                  >
+                    <strong>Resume</strong>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to="portfolio"
+                    offset={-55}
+                    className={styles.navLink}
+                    href="#"
+                  >
+                    <strong>Portfolio</strong>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to="services"
+                    offset={-55}
+                    className={styles.navLink}
+                    href="#"
+                  >
+                    <strong>Services</strong>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link
+                    smooth={true}
+                    to="contacts"
+                    offset={-55}
+                    className={styles.navLink}
+                    href="#"
+                  >
+                    <strong>Contacts</strong>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
         </div>
       </nav>
       <style>{`
