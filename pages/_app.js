@@ -2,6 +2,7 @@ import "../styles/globals.css";
 
 import "/components/About/About.module.scss";
 
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS

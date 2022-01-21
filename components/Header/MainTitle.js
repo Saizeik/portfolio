@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import Vivus from 'vivus';
-
+import styles from "/components/Header/Header.module.scss";
 
 const MainTitle = () => {
     useEffect(() => {
@@ -8,7 +8,7 @@ const MainTitle = () => {
 
     }, [])
     return(
-        <div id = 'main-title'></div>
+        <div className ={styles.mainTitle} id = 'main-title'></div>
     )
 }
 

@@ -1,38 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./navbar.module.scss";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [clientWindowHeight, setClientWindowHeight] = useState("");
-
-  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
-  const [padding, setPadding] = useState(30);
-  const [boxShadow, setBoxShadow] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
-  const handleScroll = () => {
-    setClientWindowHeight(window.scrollY);
-  };
-
-  useEffect(() => {
-    let backgroundTransparacyVar = clientWindowHeight / 600;
-
-    if (backgroundTransparacyVar < 1) {
-      let paddingVar = 30 - backgroundTransparacyVar * 20;
-      let boxShadowVar = backgroundTransparacyVar * 0.1;
-      setBackgroundTransparacy(backgroundTransparacyVar);
-      setPadding(paddingVar);
-      setBoxShadow(boxShadowVar);
-    }
-  }, [clientWindowHeight]);
-
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
         <button
           className="navbar-toggler"
           type="button"
@@ -54,11 +28,6 @@ const Navbar = () => {
                   to="header"
                   className={styles.navLink}
                   href="#"
-                  style={{
-                    color: `rgba(	16.1, 32.2, 43.9 ${backgroundTransparacy})`,
-                    padding: `${padding}px 0px`,
-                    boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-                  }}
                 >
                   <strong>Home</strong>{" "}
                   <span className="sr-only">(current)</span>
@@ -71,11 +40,6 @@ const Navbar = () => {
                   offset={-55}
                   className={styles.navLink}
                   href="#"
-                  style={{
-                    color: `rgba(	16.1, 32.2, 43.9 ${backgroundTransparacy})`,
-                    padding: `${padding}px 0px`,
-                    boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-                  }}
                 >
                   <strong>About Me</strong>
                 </Link>
@@ -88,11 +52,6 @@ const Navbar = () => {
                   offset={-55}
                   className={styles.navLink}
                   href="#"
-                  style={{
-                    color: `rgba(	16.1, 32.2, 43.9 ${backgroundTransparacy})`,
-                    padding: `${padding}px 0px`,
-                    boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-                  }}
                 >
                   <strong>Resume</strong>
                 </Link>
@@ -104,11 +63,6 @@ const Navbar = () => {
                   offset={-55}
                   className={styles.navLink}
                   href="#"
-                  style={{
-                    color: `rgba(	16.1, 32.2, 43.9 ${backgroundTransparacy})`,
-                    padding: `${padding}px 0px`,
-                    boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-                  }}
                 >
                   <strong>Portfolio</strong>
                 </Link>
@@ -120,11 +74,6 @@ const Navbar = () => {
                   offset={-55}
                   className={styles.navLink}
                   href="#"
-                  style={{
-                    color: `rgba(	16.1, 32.2, 43.9 ${backgroundTransparacy})`,
-                    padding: `${padding}px 0px`,
-                    boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-                  }}
                 >
                   <strong>Services</strong>
                 </Link>
@@ -136,17 +85,13 @@ const Navbar = () => {
                   offset={-55}
                   className={styles.navLink}
                   href="#"
-                  style={{
-                    backgroundcolor: `rgba(	16.1, 32.2, 43.9 ${backgroundTransparacy})`,
-                    padding: `${padding}px 0px`,
-                    boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-                  }}
                 >
                   <strong>Contacts</strong>
                 </Link>
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </nav>
       <style>{`

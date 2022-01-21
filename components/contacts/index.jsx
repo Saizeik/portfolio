@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./contacts.module.scss";
-//import emailjs from 'emailjs-com';
 import { useForm } from "react-hook-form";
 import "animate.css";
 import envelope from "./envelope.png";
+import emails from "./Email.png";
+import littleEmail from "./littleEmail.png";
 import Image from "next/image";
 
 // EMAILJS
+
 const service_ID = "service_859vvsp";
 const template_ID = "template_ilpkg0r";
 const user_ID = "user_39Wd73TWkWKHkCy6Ylie5";
@@ -14,20 +16,26 @@ const message =
   "The form sent successfuly! I'll contact you as soon as possible!";
 
 const Contacts = () => {
+  const [names, setNames] = useState("");
+  const [subject, setSubject] = useState("");
+  const [email, setEmail] = useState("");
+  const [description, setDescription] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const HandleChange = (event) => {
+    const value = event.target.value;
+    setUseState({
+      ...useState,
+      [event.target.name]: value,
+    });
+  };
 
-  const onSubmit = (data, r) => {
+  const onSubmit = (data, r, event) => {
     sendEmail(
       service_ID,
       template_ID,
       {
-        name: data.name,
+        names: data.name,
         email: data.email,
         subject: data.subject,
         description: data.description,
@@ -35,28 +43,127 @@ const Contacts = () => {
       user_ID
     );
     r.target.reset();
+    console.log("data", data);
+    console.log("event", event);
   };
 
+  const onError = () => {
+    console.log("wrong");
+  };
+
+  const {
+    register,
+    handleSubmit,
+
+    formState: { errors, isValid },
+  } = useForm({
+    node: "onChange",
+    defaultValues: {
+      names: "",
+      email: "",
+      subject: "",
+      description: "",
+    },
+  });
+
+  useEffect(() => {
+    window.onload = function () {
+      if (typeof window !== "undefined") {
+        let forms = document.querySelector("#form");
+        let envelope = document.querySelector("#envelope");
+
+        const SentMessage = (event) => {
+          forms.addEventListener("submit", SentMessage);
+          envelope.style.visibility = "visible";
+
+          setTimeout(function () {
+            envelope.classList.add(
+              "animate__animated",
+              "animate__lightSpeedOutRight"
+            );
+          }, 4000);
+
+          setTimeout(function () {
+            envelope.classList.remove("animate__animated", "animate__tada");
+            envelope.classList.remove(
+              "animate__animated",
+              "animate__lightSpeedOutRight"
+            );
+            envelope.style.visibility = "hidden";
+          }, 16000);
+
+          setTimeout(function () {
+            envelope.classList.add("animate__fadeInBottomRight");
+            envelope.classList.add("sendAnimation");
+            envelope.style.visibility = "visible";
+          }, 25000);
+        };
+        SentMessage();
+      }
+    };
+  });
+
   const sendEmail = (service_ID, template_ID, variables, user_ID) => {
-    emailjs
-      .send(service_ID, template_ID, variables, user_ID)
-      .then(() => setSuccessMessage(`${message}`))
-      .catch((err) => console.log(`Somthing went wrong ${err}`));
+    setTimeout(function () {
+      emailjs
+
+        .send(service_ID, template_ID, variables, user_ID)
+        .then(() => setSuccessMessage(`${message}`))
+
+        .catch((err) => console.log(`Somthing went wrong ${err}`));
+    }, 2000);
   };
 
   return (
     <div id="contacts" className={styles.formWrapper}>
+      <Image
+        src={emails}
+        className={styles.emails}
+        id="emails"
+        a
+        href="./Email.png"
+        height="300"
+        width="300"
+      />
+
+      <Image
+        src={littleEmail}
+        className={styles.littleEmail}
+        id="littleEmail"
+        a
+        href="./email.png"
+        height="100"
+        width="100"
+      />
       <div className={styles.formContainer}>
         <div className={styles.formCardGradient}></div>
         <h2>Contact Me</h2>
-        <span className={styles.successMessage}>{successMessage}</span>
-        <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+        <span className={styles.successMessage} id="successMessage">
+          {successMessage}
+          <Image
+            src={envelope}
+            className={styles.envelope}
+            id="envelope"
+            a
+            href="./envelope.png"
+            height="150"
+            width="150"
+            display="hidden"
+          />
+        </span>
+        <form
+          className={styles.form}
+          id="form"
+          onSubmit={handleSubmit(onSubmit, onError)}
+        >
           <div className={styles.textInput}>
             <input
-              type="text"
+              type="name"
               placeholder="Name"
               name="name"
-              {...register("name", { required: true })}
+              onkeyup="showEnvelope"
+              onChange={HandleChange}
+              {...register("name", { required: true, pattern: "[A-Za-z]{3,}" })}
             />
             {errors.name && (
               <span className={styles.InputError}>This field is required</span>
@@ -64,9 +171,11 @@ const Contacts = () => {
           </div>
           <div className={styles.textInput}>
             <input
-              type="text"
+              type="email"
               placeholder="Email"
               name="email"
+              onkeyup="showEnvelope"
+              onChange={HandleChange}
               {...register("email", {
                 required: true,
                 pattern: {
@@ -82,10 +191,15 @@ const Contacts = () => {
           </div>
           <div className={styles.textInput}>
             <input
-              type="text"
+              type="subject"
               placeholder="Subject"
               name="subject"
-              {...register("subject", { required: true })}
+              onkeyup="showEnvelope"
+              onChange={HandleChange}
+              {...register("subject", {
+                required: true,
+                pattern: "[A-Za-z]{3,}",
+              })}
             />
             {errors.subject && (
               <span className={styles.InputError}>This field is required</span>
@@ -93,29 +207,27 @@ const Contacts = () => {
           </div>
           <div className={styles.textArea}>
             <textarea
-              type="text"
+              type="description"
               className={styles.textArea}
               placeholder="Message"
               name="description"
-              {...register("description", { required: true })}
+              onkeyup="showEnvelope"
+              onChange={HandleChange}
+              {...register("description", {
+                required: true,
+                pattern: "[A-Za-z]{3,}",
+              })}
             />
             {errors.description && (
               <span className={styles.InputError}>This field is required</span>
             )}
           </div>
-          <button id="send" className={styles.button}>
-            SEND
-          </button>
+          <div className={styles.buttonWrapper}>
+            <button id="buttons" onclick="click" className={styles.buttons}>
+              SEND
+            </button>
+          </div>
         </form>
-        <Image
-          src={envelope}
-          className={`${styles.envelope}"animate__animated.animate__rollOut"`}
-          id="envelope"
-          a
-          href="./envelope.png"
-          height="150"
-          width="150"
-        />
       </div>
       <script
         defer
