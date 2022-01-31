@@ -25,10 +25,12 @@
   background: url(Email.png);
   background-position: center;
   background-size: cover;
+  
 }
 
 .formContainer {
   display: grid;
+  justify-content: center;
   width: 37.5rem;
   background: var(--white);
   border-radius: 0.1875rem;
@@ -49,7 +51,7 @@
   color: #ffff;
   text-transform: uppercase;
   font-weight: 400;
-
+  position: relative;
   font-family: "Bangers", cursive;
 }
 
@@ -97,9 +99,10 @@
 }
 
 .buttons {
-  display: block;
-  width: 100%;
-
+  display:block; 
+  max-width: 100%;
+  padding:4px;
+  margin:4px;
   background: linear-gradient(#023047, #61a5c2);
   border-radius: 0.1875rem;
   padding: 0.5rem 0;
@@ -118,12 +121,23 @@
   cursor: pointer;
   padding: 2rem 3rem;
 
-  transition: background-color 250ms ease-in, border 250ms ease-in;
-  cursor: pointer;
+  
 
   &:hover {
     background: #18c98e;
   }
+}
+
+.check {
+  width: 4rem;
+  height: 4rem;
+  fill: var(--clr-primary-hover);
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  opacity: 0;
+  z-index: -1;
+  animation: animateCheck 4s ease-in forwards;
 }
 
 .inputError {
@@ -158,6 +172,9 @@
   animation: animate 4s ease-in forwards;
 }
 
+.checkAnimation {
+  animation: animateCheck 4s ease-in forwards;
+}
 .emails {
   position: absolute;
   top: 0;
@@ -231,6 +248,24 @@
     background-color: transparent;
   }
 }
+
+
+@keyframes animateCheck {
+  90% {
+    display: block;
+    transform: scale(1);
+    opacity: 0;
+  }
+  95% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 
 @keyframes rollOut {
   0% {

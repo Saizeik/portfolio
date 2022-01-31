@@ -66,24 +66,7 @@ const Contacts = () => {
     },
   });
 
-  useEffect(() => {
-    window.onload = function () {
-      if (typeof window !== "undefined") {
-        let buttons = document.querySelector("#buttons");
-        let littleEmail = document.querySelector("#littleEmail");
-        const SendButton = () => {
-          buttons.addEventListener("click", SendButton);
-
-          littleEmail.classList.add("animate__animated", "animate__tada");
-
-          setTimeout(function () {
-            littleEmail.classList.remove("animate__animated", "animate__tada");
-          }, 5000);
-        };
-        SendButton();
-      }
-    };
-  });
+  
 
   useEffect(() => {
     window.onload = function () {
@@ -109,13 +92,13 @@ const Contacts = () => {
               "animate__lightSpeedOutRight"
             );
             envelope.style.visibility = "hidden";
-          }, 16000);
+          }, 12000);
 
           setTimeout(function () {
             envelope.classList.add("animate__fadeInBottomRight");
             envelope.classList.add("sendAnimation");
             envelope.style.visibility = "visible";
-          }, 25000);
+          }, 15000);
         };
         SentMessage();
       }
@@ -242,9 +225,11 @@ const Contacts = () => {
                 height="100"
                 width="100"
               />
+              <div className={styles.check} id="check"></div>
               SEND
             </button>
           </div>
+          <div className={styles.check} id="check"></div>
         </form>
       </div>
       <script

@@ -58,8 +58,8 @@ const Footer = () => {
             
           </div>
         </div>
-        <span
-          style={{ color: "#FFF" }}
+        <span className ={styles.company}
+          style={{  color: "#FFF" }}
         >{`Nathan Walker Productions | All Rights Reserved ©${new Date().getFullYear()}`}</span>
       </footer>
     </div>
