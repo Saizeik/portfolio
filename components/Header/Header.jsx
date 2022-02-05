@@ -7,9 +7,6 @@ import { motion } from "framer-motion";
 import styles from "/components/Header/Header.module.scss";
 
 function Header() {
-
- 
-
   const container = {
     hidden: { opacity: 1, scale: 0 },
     visible: {
@@ -33,124 +30,127 @@ function Header() {
         <title>Portfolio</title>
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin  />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
           rel="stylesheet"
         />
         <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-       
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
       </Head>
       <body>
+        <div id="header" className={styles.header}>
+          <div className={styles.imageColumn}>
+            <div className={styles.imageContainer}>
+              <br></br>
+              <motion.div
+                animate={{ x: 0, y: [-200, 90] }}
+                transition={{ type: "spring", bounce: 0.1 }}
+              >
+                <Image
+                  className={styles.Developer}
+                  src="/webDeveloper.jpg"
+                  alt="Computer Tools"
+                  height={300}
+                  width={300}
+                />
+              </motion.div>
+            </div>
+          </div>
 
-      <div id="header" className={styles.header}>
-        <div className={styles.imageColumn}>
-          <div className={styles.imageContainer}>
-            <br></br>
+          <Particles
+            style={{ position: "absolute" }}
+            params={{
+              particles: {
+                shape: {
+                  type: "images",
+                  image: {
+                    src: "react-logo-black.svg",
+                  },
+                },
+                number: {
+                  value: 5,
+                  density: {
+                    enable: true,
+                    value_area: 800,
+                  },
+                },
+                opacity: {
+                  value: 0.2,
+                },
+                polygon: {
+                  nb_sides: 15,
+                },
+                size: {
+                  value: 30,
+                },
+                line_linked: {
+                  enable: false,
+                },
+              },
+            }}
+          />
+          <div className="header">
+            <MainTitle
+              className={styles.mainTitle}
+              id="mainTitle"
+              preserveAspectRatio="none"
+              viewBox="0 0 300 200"
+            />
             <motion.div
-              animate={{ x: 0, y: [-200, 90] }}
-              transition={{ type: "spring", bounce: 0.1 }}
+              className={styles.iconsWrapper}
+              variants={container}
+              initial="hidden"
+              animate="visible"
             >
-              <Image
-                className={styles.Developer}
-                src="/webDeveloper.jpg"
-                alt="Computer Tools"
-                height={300}
-                width={300}
-              />
+              <div style={{ display: "flex" }}>
+                <motion.div
+                  className="item-1 item"
+                  src="html5-logo.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-2 item"
+                  src="css3-logo.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-3 item"
+                  src="js-logo-black.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-4 item"
+                  src="react-logo-black.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-5 item"
+                  src="node-dot.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-6 item"
+                  src="redux-logo-black.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-7 item"
+                  src="sass.svg"
+                  variants={item}
+                ></motion.div>
+                <motion.div
+                  className="item-8 item"
+                  src="Octicons-mark-github.svg"
+                  variants={item}
+                ></motion.div>
+              </div>
             </motion.div>
           </div>
         </div>
-
-        <Particles
-          style={{ position: "absolute" }}
-          params={{
-            particles: {
-              shape: {
-                type: "images",
-                image: {
-                  src: "react-logo-black.svg",
-                },
-              },
-              number: {
-                value: 5,
-                density: {
-                  enable: true,
-                  value_area: 800,
-                },
-              },
-              opacity: {
-                value: 0.2,
-              },
-              polygon: {
-                nb_sides: 15,
-              },
-              size: {
-                value: 30,
-              },
-              line_linked: {
-                enable: false,
-              },
-            },
-          }}
-        />
-        <div className="header" >
-          <MainTitle className= {styles.mainTitle} id ="mainTitle" preserveAspectRatio="none" viewBox="0 0 300 200"/>
-          <motion.div
-            className={styles.iconsWrapper}
-            variants={container}
-            initial="hidden"
-            animate="visible"
-          >
-            <div style={{ display: "flex" }}>
-              <motion.div
-                className="item-1 item"
-                src="html5-logo.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-2 item"
-                src="css3-logo.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-3 item"
-                src="js-logo-black.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-4 item"
-                src="react-logo-black.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-5 item"
-                src="node-dot.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-6 item"
-                src="redux-logo-black.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-7 item"
-                src="sass.svg"
-                variants={item}
-              ></motion.div>
-              <motion.div
-                className="item-8 item"
-                src="Octicons-mark-github.svg"
-                variants={item}
-              ></motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-      <style>{`
+        <style>{`
 
 .main-title {
     padding: 2rem;
@@ -196,9 +196,17 @@ function Header() {
   .item-8 {
     background: url(/public/Octicons-mark-github.svg) no-repeat;
   `}</style>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossOrigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossOrigin="anonymous"></script>
+      </body>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossOrigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossOrigin="anonymous"
+      ></script>
     </div>
   );
 }

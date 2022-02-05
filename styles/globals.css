@@ -8,6 +8,9 @@ body {
 }
 
 html {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
   --dark-purple: #202330;
   --light-purple: #7b84aa;
   line-height: 1.15; /* 1 */
@@ -387,4 +390,3 @@ template {
     transform: translateX(0);
   }
 }
-

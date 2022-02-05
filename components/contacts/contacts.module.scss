@@ -19,13 +19,24 @@
 }
 
 .formWrapper {
+  position: relative;
   min-height: 100vh;
   align-items: center;
-  padding: 5rem 3rem;
+  width: 100%;
   background: url(Email.png);
   background-position: center;
   background-size: cover;
-  
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  bottom: 60px;
+}
+.imageWrapper {
+  position: relative;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 
 .formContainer {
@@ -57,6 +68,7 @@
 
 .form {
   padding: 2rem;
+  width: 600px;
 }
 
 .textInput {
@@ -99,18 +111,24 @@
 }
 
 .buttons {
-  display:block; 
-  max-width: 100%;
-  padding:4px;
-  margin:4px;
+  display: block;
+  position: relative;
+  left: 115px;
+  top: 0px;
+  bottom: 0px;
+  height: 75px;
+  width: 300px;
+  padding: 0px;
+  margin: 0px;
   background: linear-gradient(#023047, #61a5c2);
-  border-radius: 0.1875rem;
+  border-radius: 10px;
   padding: 0.5rem 0;
   font-size: 1rem;
   font-family: "Bangers", cursive;
   font-weight: bold;
-
+  align-items: center;
   text-align: center;
+
   color: white;
   font-size: 2rem;
   font-weight: bold;
@@ -121,11 +139,21 @@
   cursor: pointer;
   padding: 2rem 3rem;
 
-  
-
   &:hover {
     background: #18c98e;
   }
+}
+
+.send {
+  position: relative;
+  top: -27px;
+  left: -20px;
+}
+
+.textSend {
+  position: relative;
+  top: -92.5px;
+  right: -50px;
 }
 
 .check {
@@ -144,6 +172,8 @@
   justify-self: center;
   color: tomato;
   font-weight: 400;
+  position: relative;
+  margin-bottom: 0px;
 }
 
 .successMessage {
@@ -249,7 +279,6 @@
   }
 }
 
-
 @keyframes animateCheck {
   90% {
     display: block;
@@ -265,7 +294,6 @@
     opacity: 1;
   }
 }
-
 
 @keyframes rollOut {
   0% {
@@ -384,8 +412,48 @@
 /* Mobile */
 @media (max-width: 500px) {
   .formContainer {
-    height: 110px;
+    height: 860px;
     width: 300px;
     flex-direction: column;
+    position: relative;
+    left: 25px;
+  }
+  .form {
+    position: relative;
+    left: 150px;
+    top: -25px;
+    max-width: 50%;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+
+  .buttons {
+    height: 1px;
+    width: 202px;
+    position: relative;
+    top: -8px;
+    left: 15px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonWrapper {
+    height: 8px;
+    width: 202px;
+    position: relative;
+  }
+  .send {
+    position: relative;
+    left: 0px;
+    top: -22.5px;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+  }
+  .textSend {
+    position: relative;
+    top: -67.5px;
+    right: -30px;
   }
 }

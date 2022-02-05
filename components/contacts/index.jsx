@@ -66,8 +66,6 @@ const Contacts = () => {
     },
   });
 
-  
-
   useEffect(() => {
     window.onload = function () {
       if (typeof window !== "undefined") {
@@ -118,17 +116,18 @@ const Contacts = () => {
 
   return (
     <div id="contacts" className={styles.formWrapper}>
-      <Image
-        src={emails}
-        className={styles.emails}
-        id="emails"
-        alt="mailbox with mail feeding through"
-        a
-        href="./Email.png"
-        height="300"
-        width="300"
-      />
-
+      <div className={styles.imageWrapper}>
+        <Image
+          src={emails}
+          className={styles.emails}
+          id="emails"
+          alt="mailbox with mail feeding through"
+          a
+          href="./Email.png"
+          height="300"
+          width="300"
+        />
+      </div>
       <div className={styles.formContainer}>
         <div className={styles.formCardGradient}></div>
         <h2>Contact Me</h2>
@@ -215,18 +214,20 @@ const Contacts = () => {
           </div>
           <div className={styles.buttonWrapper}>
             <button id="buttons" className={styles.buttons}>
-              <Image
-                src={littleEmail}
-                className={styles.littleEmail}
-                id="littleEmail"
-                alt="little email icon"
-                a
-                href="./email.png"
-                height="100"
-                width="100"
-              />
+              <div className={styles.send}>
+                <Image
+                  src={littleEmail}
+                  className={styles.littleEmail}
+                  id="littleEmail"
+                  alt="little email icon"
+                  a
+                  href="./email.png"
+                  height="60"
+                  width="60"
+                />
+              </div>
               <div className={styles.check} id="check"></div>
-              SEND
+              <div className={styles.textSend}>SEND </div>
             </button>
           </div>
           <div className={styles.check} id="check"></div>

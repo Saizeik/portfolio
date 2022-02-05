@@ -1,14 +1,28 @@
-.footer {
-  background: #295270;
-  margin-top: auto;
-  
-  min-height: 100vh;
-  animation: slideInFromBottom 2s;
-  font-family: 'Bangers', cursive;
-  flex-direction: column;
-  justify-content: center;
+.footerContainer {
+  position: relative;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  max-height: 100%;
+  background-size: cover;
 }
 
+.footer {
+  position: relative;
+  background: #295270;
+  margin: 0px;
+  max-width: 100%;
+  min-height: 15vh;
+  animation: slideInFromBottom 2s;
+  font-family: "Bangers", cursive;
+  background-size: cover;
+  justify-content: center;
+  top: 0px;
+
+  background-position: center;
+  height: 100%;
+}
 
 .container {
   display: flex;
@@ -16,8 +30,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
 }
-
 
 .ul {
   list-style-type: none;
@@ -50,14 +64,12 @@
   text-decoration: none;
 }
 
-.company{
+.company {
   display: flex-start;
   flex-direction: column;
-  
-  
+
   justify-content: flex-start;
 }
-
 
 /* Animations */
 @keyframes slideInFromLeft {
@@ -140,29 +152,30 @@
   .showcase-form {
     width: 300px;
   }
-} 
+}
 
 /* Mobile */
 @media (max-width: 500px) {
-  .formContainer {
-    height:25px;
-    width: 25px;
-    bottom:300%;
-    flex-direction:column;
-    justify-self: bottom;
-    align-items: bottom center;
+  .footerContainer {
+    position: relative;
+    top: -150px;
+    margin: 0px;
+    padding: 0px;
   }
 
-    .company{
-      flex-direction: column;
-    justify-content: bottom;
-    align-items: bottom center;
-    min-height: 80%;
-    
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-    }
-  
-}
+  .footer {
+    position: relative;
+    min-height: 20%;
+    top: 0px;
+    left: 0px;
+    max-width: 100%;
+    background-size: auto;
+    padding: 0px;
+    margin: 0px;
 
- 
+    grid-template-columns: 1fr;
+  }
+  .company {
+    position: relative;
+  }
+}

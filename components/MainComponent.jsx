@@ -12,12 +12,12 @@ const Main = () => {
   return (
     <>
       <Header />
+      <Navbar />
       <About />
       <Resume />
       <Portfolio />
       <Services />
       <Contacts />
-      <Navbar />
       <Footer />
     </>
   );
