@@ -8,16 +8,15 @@ const Services = () => {
       <div className={styles.mainServicesWrapper}>
         <div className="container my-5">
           <div className={styles.servicesWrapper}>
-            <h1>My Services</h1>
+            <h1 className={styles.h1}>My Services</h1>
             <div className={styles.servicesRow}>
               <div className="row">
                 {servicesContent.map((item, key) => (
                   <div className="col-md-4 col-sm-12" key={key}>
                     <div className={styles.serviceBox}>
                       <div className={`${styles.card} "card bg-light mb-3"`}>
-                        <span className={item.className}></span>
-                        <h5>{item.title}</h5>
-                        <p>{item.description}</p>
+                        <h5 className={styles.title}>{item.title}</h5>
+                        <p className={styles.description}>{item.description}</p>
                       </div>
                     </div>
                   </div>

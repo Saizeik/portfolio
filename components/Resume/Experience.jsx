@@ -1,6 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "/components/Resume/Resume.module.scss";
+import Image from "next/image";
+import experience from "./experience.png";
+import education from "./education.png";
 
 const Experience = () => {
   return (
@@ -11,7 +14,19 @@ const Experience = () => {
             <div className="col-lg-6 col-md-8 col-sm-12">
               <div className={styles.resume}>
                 <div className="my-5">
-                  <h1 className={styles.resume.h1}>education</h1>
+                  <h1 className={styles.h1}>education</h1>
+                </div>
+                <div className={styles.educationImageWrapper}>
+                  <Image
+                    src={education}
+                    className={styles.education}
+                    id="educationApple"
+                    alt="clip art of an apple"
+                    a
+                    href="./education.png"
+                    height="100"
+                    width="100"
+                  />
                 </div>
                 <div className={styles.container.wrapper}>
                   <div className={styles.timelineBlock}>
@@ -90,7 +105,19 @@ const Experience = () => {
             <div className="col-lg-6 col-md-8 col-sm-12">
               <div className={styles.resume}>
                 <div className="my-5">
-                  <h1 className={styles.resume.h1}>Experience</h1>
+                  <h1 className={styles.h1}>Experience</h1>
+                </div>
+                <div className={styles.experienceImageWrapper}>
+                  <Image
+                    src={experience}
+                    className={styles.experienceBriefCase}
+                    id="experienceBriefCase"
+                    alt="Strapped Briefcase"
+                    a
+                    href="./experience.png"
+                    height="100"
+                    width="100"
+                  />
                 </div>
 
                 <div className={styles.container.wrapper}>

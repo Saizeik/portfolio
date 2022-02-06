@@ -1,3 +1,10 @@
+.portfolioContainer {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  top: 0px;
+}
+
 .grid {
   position: absolute;
   margin: 0 auto;
@@ -6,7 +13,6 @@
   height: 56.25rem;
   list-style: none;
   text-align: center;
-
 }
 
 .grid figure {
@@ -29,7 +35,7 @@
 }
 
 .h1 {
-  font-family: 'Bangers', cursive, serif;
+  font-family: "Bangers", cursive, serif;
   animation: slideInFromLeft 2s;
 }
 
@@ -45,11 +51,12 @@ figure.effect figcaption {
   position: relative;
   margin-top: -4rem;
   padding: 0.5em;
-  height: 4rem;
-  background: linear-gradient(#023047, #61a5c2);
+
+  background: #295270;
   color: #ffff;
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);
+  height: 80px;
 }
 
 .grid figure h2 {
@@ -84,7 +91,7 @@ figure.effect p.iconLinks .shareBtn {
 figure.effect p.description {
   position: relative;
   bottom: 5em;
-  color: #fff;
+  color: #ffff;
   text-transform: none;
   font-size: 90%;
   opacity: 0;
@@ -152,17 +159,18 @@ figure.effect:hover h2 {
 
 figure.effect:hover p.description {
   opacity: 1;
-  background: linear-gradient(#023047, #61a5c2);
+  background: #295270;
   position: absolute;
 }
 
 .demoLinks {
   text-decoration: none;
-  color: #3c4a50;
+  color: #ffff;
+  font-size: 16px;
 }
 
 .demoLinks:hover {
-  color: #fff;
+  color: #ffff;
 }
 
 /* Animations */
@@ -217,7 +225,16 @@ figure.effect:hover p.description {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
+  figure.effect figcaption {
+    position: relative;
+    height: 110px;
+  }
+  .demoLinks {
+    display: none;
+  }
+  .demoAndGitHubLinks {
+    display: none;
+  }
   .grid {
     height: auto;
 
@@ -232,14 +249,23 @@ figure.effect:hover p.description {
 
 /* Mobile */
 @media (max-width: 500px) {
-  .grid{
+  .grid {
     height: 110px;
     width: 300px;
-  
+
     flex-direction: column;
-  
-    padding: 10px;
+
     background-color: rgba(0, 0, 0, 0.1);
-  
-}
+  }
+
+  figure.effect figcaption {
+    position: relative;
+    height: 60px;
+  }
+  .demoLinks {
+    display: none;
+  }
+  .demoAndGitHubLinks {
+    display: none;
+  }
 }

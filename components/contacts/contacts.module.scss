@@ -396,32 +396,48 @@
   .textInput,
   .placeholder,
   .textArea,
+  .h2,
+  .envelopeContainer,
   .button,
   .inputError,
   .successMessage,
-  .grid {
+  .grid, .imageWrapper{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+  .imageWrapper{
+    position:relative;
+    left:150px;
+  }
 
   .formContainer {
-    height: auto;
+    position:relative;
+    height:auto;
+    max-width:768px;
+    justify-content:center;
+    justify-self:center;
+    flex-direction:column;
+    left:100px;
+    
   }
-}
+  .h2{
+    position:relative;
+    top:0px;
+    left:0px;
+  }
 
-/* Mobile */
-@media (max-width: 500px) {
-  .formContainer {
-    height: 860px;
-    width: 300px;
-    flex-direction: column;
-    position: relative;
-    left: 25px;
+
+  .envelopeContainer{
+    position:relative;
+    top:0px;
+    left: 0px;
   }
+
+
   .form {
     position: relative;
     left: 150px;
-    top: -25px;
+    top: 0px;
     max-width: 50%;
     margin-bottom: 2px;
     justify-content: center;
@@ -431,17 +447,13 @@
     height: 1px;
     width: 202px;
     position: relative;
-    top: -8px;
-    left: 15px;
+    top: 25px;
+    left:15px;
 
     align-items: center;
     justify-content: center;
   }
-  .buttonWrapper {
-    height: 8px;
-    width: 202px;
-    position: relative;
-  }
+  
   .send {
     position: relative;
     left: 0px;
@@ -456,4 +468,74 @@
     top: -67.5px;
     right: -30px;
   }
+
+}
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 500px) {
+
+  .imageWrapper{
+    position:relative;
+    left:50px;
+  }
+
+  .h2{
+    position:relative;
+    top:-90px;
+  }
+
+
+  .envelopeContainer{
+    position:relative;
+    top:-65px;
+  }
+
+
+  .formContainer {
+    height: 860px;
+    width: 300px;
+    flex-direction: column;
+    position: relative;
+    left: 45px;
+  }
+  .form {
+    position: relative;
+    left: 150px;
+    top: -65px;
+    max-width: 50%;
+    margin-bottom: 2px;
+    justify-content: center;
+  }
+
+  .buttons {
+    height: 1px;
+    width: 202px;
+    position: relative;
+    top: 25px;
+    left: 15px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .send {
+    position: relative;
+    left: 0px;
+    top: -22.5px;
+    height: 45px;
+    width: 45px;
+    align-items: center;
+    justify-content: center;
+  }
+  .textSend {
+    position: relative;
+    top: -67.5px;
+    right: -30px;
+  }
+
 }

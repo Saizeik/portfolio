@@ -130,20 +130,22 @@ const Contacts = () => {
       </div>
       <div className={styles.formContainer}>
         <div className={styles.formCardGradient}></div>
-        <h2>Contact Me</h2>
+        <h2 className={styles.h2}>Contact Me</h2>
         <span className={styles.successMessage} id="successMessage">
           {successMessage}
-          <Image
-            src={envelope}
-            className={styles.envelope}
-            id="envelope"
-            alt="Post Card for send animation"
-            a
-            href="./envelope.png"
-            height="150"
-            width="150"
-            display="hidden"
-          />
+          <div className={styles.envelopeContainer}>
+            <Image
+              src={envelope}
+              className={styles.envelope}
+              id="envelope"
+              alt="Post Card for send animation"
+              a
+              href="./envelope.png"
+              height="150"
+              width="150"
+              display="hidden"
+            />
+          </div>
         </span>
         <form
           className={styles.form}

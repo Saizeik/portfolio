@@ -5,14 +5,7 @@ import homeownify from "/public/Homeownify.jpg";
 import eshop from "/public/eshop.jpg";
 
 export const content = [
-  {
-    title: "Netflix",
-    subtitle: "Clone",
-    Image: netflix,
-    src: "/public/netflix.jpg",
-    github: "https://netflix-clone.git",
-    demo: "https://netflix-clone.com",
-  },
+
   {
     title: "E-commerce Store",
     subtitle: "Sneakers",
@@ -33,10 +26,9 @@ export const content = [
 
   {
     title: "Nucampsite",
-    subtitle: "Nucamp Project",
+    subtitle: "Nucamp",
     Image: nucampsite,
     src: "/public/nucampsite.jpg",
-
     github: "https://github.com/Saizeik/Nucampsite",
     demo: "https://nathanwalkernucamp.netlify.app",
   },

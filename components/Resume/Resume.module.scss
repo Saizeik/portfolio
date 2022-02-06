@@ -11,6 +11,18 @@
   animation: slideInFromLeft 1s;
 }
 
+.educationImageWrapper {
+  left: 130px;
+  top: -175px;
+  position: relative;
+}
+
+.experienceImageWrapper {
+  left: 130px;
+  top: -175px;
+  position: relative;
+}
+
 .resume {
   padding: 0.7rem;
 }
@@ -165,6 +177,28 @@
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
   }
+
+  .educationImageWrapper {
+    left: 130px;
+    top: -75px;
+    position: relative;
+  }
+
+  .experienceImageWrapper {
+    left: 130px;
+    top: -75px;
+    position: relative;
+  }
+
+  .h1 {
+    position: relative;
+    left: 130px;
+  }
+
+  .timelineBlock {
+    position: relative;
+    left: 205px;
+  }
 }
 
 /* Mobile */
@@ -175,5 +209,27 @@
     text-align: center;
     margin-bottom: 5px;
     padding: 5px;
+  }
+
+  .timelineBlock {
+    position: relative;
+    left: 45px;
+  }
+
+  .educationImageWrapper {
+    left: 0px;
+    top: -50px;
+    position: relative;
+  }
+
+  .experienceImageWrapper {
+    left: 0px;
+    top: -50px;
+    position: relative;
+  }
+
+  .h1 {
+    position: relative;
+    left: 0px;
   }
 }
