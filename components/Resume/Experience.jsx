@@ -4,6 +4,7 @@ import styles from "/components/Resume/Resume.module.scss";
 import Image from "next/image";
 import experience from "./experience.png";
 import education from "./education.png";
+import "animate.css";
 
 const Experience = () => {
   return (
