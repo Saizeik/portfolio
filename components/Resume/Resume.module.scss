@@ -131,7 +131,7 @@
 
 .timelineBlock {
   width: calc(60% + 1rem);
-  display: flex;
+
   justify-content: space-between;
   clear: both;
 }
@@ -141,6 +141,18 @@
   padding: 0 0.9375rem;
   color: #999;
   direction: ltr;
+}
+
+.educationButton {
+  outline: none;
+  background: transparent;
+  border-color: transparent;
+}
+
+.experienceButton {
+  outline: none;
+  background: transparent;
+  border-color: transparent;
 }
 
 /* Animations */
@@ -201,7 +213,7 @@
 }
 
 /******************** MEDIA  **************************/
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .resume .container {
     padding-left: 0;
   }
@@ -210,9 +222,40 @@
     left: 0.5rem;
     margin-bottom: 1.875rem;
   }
+
+  .resumeMainWrapper {
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .educationImageWrapper {
+    left: 130px;
+    top: -75px;
+    position: relative;
+  }
+
+  .experienceImageWrapper {
+    left: 130px;
+    top: -75px;
+    position: relative;
+  }
+
+  .h1 {
+    position: relative;
+    left: 30px;
+  }
+
+  .timelineBlock {
+    position: relative;
+    left: 205px;
+  }
 }
 
 /* Tablets and under */
+
+
 @media (max-width: 768px) {
   .root .resumeMainWrapper,
   .resume,
@@ -253,6 +296,36 @@
   .timelineBlock {
     position: relative;
     left: 205px;
+  }
+}
+@media (min-width: 501px) {
+  .resumeMainWrapper {
+    height: auto;
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .educationImageWrapper {
+    left: 20px;
+    top: -75px;
+    position: relative;
+  }
+
+  .experienceImageWrapper {
+    left: 20px;
+    top: -75px;
+    position: relative;
+  }
+
+  .h1 {
+    position: relative;
+    left: 20px;
+  }
+
+  .timelineBlock {
+    position: relative;
+    left: 100px;
   }
 }
 

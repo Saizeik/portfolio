@@ -4,6 +4,7 @@ import MainTitle from "/components/Header/MainTitle.js";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
 
+
 import styles from "/components/Header/Header.module.scss";
 
 function Header() {
@@ -42,7 +43,7 @@ function Header() {
       </Head>
       <body>
         <div id="header" className={styles.header}>
-          <div className={styles.imageColumn}>
+        <div className={styles.imageColumn}>
             <div className={styles.imageContainer}>
               <br></br>
               <motion.div

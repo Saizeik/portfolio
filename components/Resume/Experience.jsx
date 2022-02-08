@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "/components/Resume/Resume.module.scss";
 import Image from "next/image";
@@ -7,6 +7,16 @@ import education from "./education.png";
 import "animate.css";
 
 const Experience = () => {
+  const [showMeEducation, setShowMeEducation] = useState(false);
+  function toggleEducation() {
+    setShowMeEducation(!showMeEducation);
+  }
+
+  const [showMeExperience, setShowMeExperience] = useState(false);
+  function toggleExperience() {
+    setShowMeExperience(!showMeExperience);
+  }
+
   return (
     <div className={styles.resumeMainWrapper}>
       <section className="container-fluid">
@@ -17,20 +27,29 @@ const Experience = () => {
                 <div className="my-5">
                   <h1 className={styles.h1}>education</h1>
                 </div>
-                <div className={styles.educationImageWrapper}>
-                  <Image
-                    src={education}
-                    className={styles.education}
-                    id="educationApple"
-                    alt="clip art of an apple"
-                    a
-                    href="./education.png"
-                    height="100"
-                    width="100"
-                  />
-                </div>
-                <div className={styles.container.wrapper}>
-                  <div className={styles.timelineBlock}>
+                <button
+                  className={styles.educationButton}
+                  onClick={() => toggleEducation()}
+                >
+                  <div className={styles.educationImageWrapper}>
+                    <Image
+                      src={education}
+                      className={styles.education}
+                      alt="clip art of an apple"
+                      a
+                      href="./education.png"
+                      height="100"
+                      width="100"
+                    />
+                  </div>
+                </button>
+                <div
+                  className={styles.container.wrapper}
+                  style={{
+                    display: showMeEducation ? "block" : "none",
+                  }}
+                >
+                  <div className={styles.timelineBlock} id="overlayEducation">
                     <div className={styles.marker}></div>
                     <div className={styles.timelineContent}>
                       <h3 className={styles.resume.h3}>NuCamp</h3>
@@ -46,8 +65,13 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className={styles.container.wrapper}>
-                  <div className={styles.timelineBlock}>
+                <div
+                  className={styles.container.wrapper}
+                  style={{
+                    display: showMeEducation ? "block" : "none",
+                  }}
+                >
+                  <div className={styles.timelineBlock} id="overlayEducation">
                     <div className={styles.marker}></div>
                     <div className={styles.timelineContent}>
                       <h3 className={styles.resume.h3}>NuCamp</h3>
@@ -65,8 +89,13 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className={styles.container.wrapper}>
-                  <div className={styles.timelineBlock}>
+                <div
+                  className={styles.container.wrapper}
+                  style={{
+                    display: showMeEducation ? "block" : "none",
+                  }}
+                >
+                  <div className={styles.timelineBlock} id="overlayEducation">
                     <div className={styles.marker}></div>
                     <div className={styles.timelineContent}>
                       <h3 className={styles.resume.h3}>NuCamp</h3>
@@ -82,8 +111,13 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className={styles.container.wrapper}>
-                  <div className={styles.timelineBlock}>
+                <div
+                  className={styles.container.wrapper}
+                  style={{
+                    display: showMeEducation ? "block" : "none",
+                  }}
+                >
+                  <div className={styles.timelineBlock} id="overlayEducation">
                     <div className={styles.marker}></div>
                     <div className={styles.timelineContent}>
                       <h3 className={styles.resume.h3}>Frontend Masters</h3>
@@ -108,20 +142,29 @@ const Experience = () => {
                 <div className="my-5">
                   <h1 className={styles.h1}>Experience</h1>
                 </div>
-                <div className={styles.experienceImageWrapper}>
-                  <Image
-                    src={experience}
-                    className={styles.experienceBriefCase}
-                    id="experienceBriefCase"
-                    alt="Strapped Briefcase"
-                    a
-                    href="./experience.png"
-                    height="100"
-                    width="100"
-                  />
-                </div>
-
-                <div className={styles.container.wrapper}>
+                <button
+                  className={styles.experienceButton}
+                  onClick={() => toggleExperience()}
+                >
+                  <div className={styles.experienceImageWrapper}>
+                    <Image
+                      src={experience}
+                      className={styles.experienceBriefCase}
+                      id="experienceBriefCase"
+                      alt="Strapped Briefcase"
+                      a
+                      href="./experience.png"
+                      height="100"
+                      width="100"
+                    />
+                  </div>
+                </button>
+                <div
+                  className={styles.container.wrapper}
+                  style={{
+                    display: showMeExperience ? "block" : "none",
+                  }}
+                >
                   <div className={styles.timelineBlock}>
                     <div className={styles.marker}></div>
                     <div className={styles.timelineContent}>
