@@ -1,6 +1,9 @@
 module.exports = {
   reactStrictMode: true,
+ 
 }
+
+
 const withCSS = require('@zeit/next-css')
 
 module.exports = withCSS({
@@ -32,4 +35,10 @@ module.exports = {
   module: {
     rules: [{ test: /\.txt$/, use: 'raw-loader' }],
   },
+
 };
+module.exports = {
+  experimental: {
+    esmExternals: false
+  }
+}

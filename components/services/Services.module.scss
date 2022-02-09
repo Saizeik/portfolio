@@ -70,12 +70,14 @@
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  margin: 10px;
+  margin: 20px;
   border-radius: 10px;
   height: 14rem;
   text-align: center;
   background: #fff;
   border-bottom: 2px solid tomato;
+ 
+  
 }
 
 .card {
@@ -89,9 +91,12 @@
 .serviceBox span {
   margin-bottom: 1rem;
 }
-.serviceBox:hover {
+.serviceBox:hover,
+.serviceBox:focus-within {
   animation: pulse 2s infinite;
   box-shadow: 0 0 0 rgba(195, 205, 252, 0.7);
+  transform: translateY(-1rem);
+  transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
 }
 
 .serviceBox h5 {
