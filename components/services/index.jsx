@@ -20,7 +20,7 @@ const Services = () => {
                       viewport={{ once: true }}
                       animate={{ x: 0, y: 35 }}
                       transition={{
-                        delay: 1,
+                        delay: 2,
                         x: { type: "spring", stiffness: 100 },
                         default: { duration: 2 },
                       }}

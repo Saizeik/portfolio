@@ -5,6 +5,7 @@ import Image from "next/image";
 import experience from "./experience.png";
 import education from "./education.png";
 import "animate.css";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   const [showMeEducation, setShowMeEducation] = useState(false);
@@ -27,7 +28,12 @@ const Experience = () => {
                 <div className="my-5">
                   <h1 className={styles.h1}>education</h1>
                 </div>
-                <button
+                <motion.button
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 1 },
+                  }}
+                  whileTap={{ scale: 0.9 }}
                   className={styles.educationButton}
                   onClick={() => toggleEducation()}
                 >
@@ -42,7 +48,7 @@ const Experience = () => {
                       width="100"
                     />
                   </div>
-                </button>
+                </motion.button>
                 <div
                   className={styles.container.wrapper}
                   style={{
@@ -142,7 +148,12 @@ const Experience = () => {
                 <div className="my-5">
                   <h1 className={styles.h1}>Experience</h1>
                 </div>
-                <button
+                <motion.button
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 1 },
+                  }}
+                  whileTap={{ scale: 0.9 }}
                   className={styles.experienceButton}
                   onClick={() => toggleExperience()}
                 >
@@ -158,7 +169,7 @@ const Experience = () => {
                       width="100"
                     />
                   </div>
-                </button>
+                </motion.button>
                 <div
                   className={styles.container.wrapper}
                   style={{

@@ -76,8 +76,6 @@
   text-align: center;
   background: #fff;
   border-bottom: 2px solid tomato;
- 
-  
 }
 
 .card {
@@ -96,7 +94,7 @@
   animation: pulse 2s infinite;
   box-shadow: 0 0 0 rgba(195, 205, 252, 0.7);
   transform: translateY(-1rem);
-  transition: all 1s cubic-bezier(0.68,-.55,.265,1.55);
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .serviceBox h5 {
@@ -263,5 +261,56 @@
     flex-direction: row;
     padding: 10px;
     margin: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .counterContainer {
+    position: relative;
+    top: -100px;
+  }
+
+  .servicesContainer {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+  }
+  .h1 {
+    position: relative;
+    top: -100px;
+  }
+
+  .card {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    top: 5px;
+  }
+  .title {
+    max-height: 10%;
+    position: relative;
+  }
+  .description {
+    max-height: 10%;
+    position: relative;
+  }
+  .servicesRow {
+    position: relative;
+    max-width: 500px;
+    left: 10px;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    top: -150px;
+  }
+  .serviceBox {
+    justify-content: center;
+    max-height: 100%;
+    position: relative;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    left: -20px;
   }
 }
