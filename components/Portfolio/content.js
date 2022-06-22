@@ -1,5 +1,5 @@
 import netflix from "/public/netflix.jpg";
-
+import JobJourney from "/public/JobJourney.jpg";
 import nucampsite from "/public/nucampsite.jpg";
 import homeownify from "/public/Homeownify.jpg";
 import eshop from "/public/eshop.jpg";
