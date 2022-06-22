@@ -25,6 +25,17 @@ export const content = [
   },
 
   {
+    title: "Jobjourney",
+    subtitle: "Map your Job Search Experience",
+    Image: JobJourney,
+    src: "/public/JobJourney.jpg",
+    github: "https://github.com/Saizeik/jobJourney",
+    demo: "https://jobjourney.fly.dev",
+  },
+
+
+
+  {
     title: "Nucampsite",
     subtitle: "Nucamp",
     Image: nucampsite,
