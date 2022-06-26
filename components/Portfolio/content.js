@@ -1,7 +1,7 @@
-import netflix from "/public/netflix.jpg";
+
 import JobJourney from "/public/JobJourney.jpg";
 import nucampsite from "/public/nucampsite.jpg";
-import homeownify from "/public/Homeownify.jpg";
+import homeownify from "/public/homeOwnify.jpg";
 import eshop from "/public/eshop.jpg";
 
 export const content = [
@@ -19,7 +19,7 @@ export const content = [
     title: "HomeOwnify",
     subtitle: "Own a Home",
     Image: homeownify,
-    src: "/public/homeownify.jpg",
+    src: "/public/homeOwnify.jpg",
     github: "https://github.com/Saizeik/Homeownify",
     demo: "https://homeownify.netlify.app",
   },
