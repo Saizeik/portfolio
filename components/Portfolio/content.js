@@ -1,7 +1,7 @@
 
 import JobJourney from "/public/JobJourney.jpg";
 import nucampsite from "/public/nucampsite.jpg";
-import homeownify from "/public/homeOwnify.jpg";
+import homeownify from "/public/homeOwnifyPhoto.jpg";
 import eshop from "/public/eshop.jpg";
 
 export const content = [
@@ -17,15 +17,15 @@ export const content = [
 
   {
     title: "HomeOwnify",
-    subtitle: "Own a Home",
+    subtitle: "In Development: Own a Home",
     Image: homeownify,
-    src: "/public/homeOwnify.jpg",
+    src: "/public/homeOwnifyPhoto.jpg",
     github: "https://github.com/Saizeik/Homeownify",
     demo: "https://homeownify.netlify.app",
   },
 
   {
-    title: "Jobjourney",
+    title: "JobJourney",
     subtitle: "Map your Job Search Experience",
     Image: JobJourney,
     src: "/public/JobJourney.jpg",
