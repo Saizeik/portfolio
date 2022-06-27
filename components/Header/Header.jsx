@@ -4,7 +4,6 @@ import MainTitle from "/components/Header/MainTitle.js";
 import Particles from "react-particles-js";
 import { motion } from "framer-motion";
 
-
 import styles from "/components/Header/Header.module.scss";
 
 function Header() {
@@ -43,20 +42,42 @@ function Header() {
       </Head>
       <body>
         <div id="header" className={styles.header}>
-        <div className={styles.imageColumn}>
+          <div className={styles.imageColumn}>
+            <div className={styles.spaceManContainer}>
+              <br></br>
+              <motion.div
+                animate={{ x: 210, y: [-255, 330] }}
+                transition={{
+                  type: "spring",
+                  bounce: 0.1,
+                  delay: 4,
+                  duration: 3,
+                }}
+              >
+                {" "}
+                <Image
+                  className={styles.Developer}
+                  src="/spaceman.svg"
+                  alt="astronaut spaceman"
+                  height={100}
+                  width={100}
+                />
+              </motion.div>
+            </div>
             <div className={styles.imageContainer}>
               <br></br>
               <motion.div
                 animate={{ x: 0, y: [-200, 90] }}
                 transition={{ type: "spring", bounce: 0.1 }}
               >
-                <Image
+                <object
+                  type="image/svg+xml"
                   className={styles.Developer}
-                  src="/webDeveloper.jpg"
-                  alt="Computer Tools"
-                  height={300}
-                  width={300}
-                />
+                  data="rocketLaunch.svg"
+                  alt="Rocket Ship Moving Over The World"
+                  height={500}
+                  width={500}
+                ></object>
               </motion.div>
             </div>
           </div>

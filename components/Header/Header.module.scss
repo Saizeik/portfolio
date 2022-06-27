@@ -13,7 +13,7 @@
 
 .Developer {
   justify-self: center;
-  border-radius: 10%;
+  margin-bottom: 10%;
 }
 
 .header {
@@ -42,8 +42,21 @@
   text-align: center;
 }
 
+.spaceManContainer {
+  display: flex;
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+}
+
 .imageContainer {
-  display: inline-block;
+  display: flex;
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+  border-radius: 10px;
+  margin-bottom: 20%;
 }
 
 .iconsWrapper {
@@ -117,6 +130,7 @@
     position: relative;
     left: 0;
     right: 0;
+    margin-top: 200px;
     max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
