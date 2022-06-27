@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   return (
     <div id="services" className={`${styles.servicesContainer}container-fluid`}>
-      <div className={styles.mainServicesWrapper}>
+     <div className={styles.mainServicesWrapper}>
         <div className="container my-5">
           <div className={styles.servicesWrapper}>
             <h1 className={styles.h1}>My Services</h1>

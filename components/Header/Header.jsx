@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import starrySky from "/public/starrysky.jpg";
 import MainTitle from "/components/Header/MainTitle.js";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 import { motion } from "framer-motion";
 
 import styles from "/components/Header/Header.module.scss";
@@ -64,21 +65,32 @@ function Header() {
                 />
               </motion.div>
             </div>
-            <div className={styles.imageContainer}>
-              <br></br>
-              <motion.div
-                animate={{ x: 0, y: [-200, 90] }}
-                transition={{ type: "spring", bounce: 0.1 }}
-              >
-                <object
-                  type="image/svg+xml"
-                  className={styles.Developer}
-                  data="rocketLaunch.svg"
-                  alt="Rocket Ship Moving Over The World"
-                  height={500}
-                  width={500}
-                ></object>
-              </motion.div>
+            <div className={styles.animationContainer}>
+              <Image
+                src={starrySky}
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                height="700px"
+                width="700px"
+              />
+
+              <div className={styles.imageContainer}>
+                <br></br>
+                <motion.div
+                  animate={{ x: 0, y: [-200, 90] }}
+                  transition={{ type: "spring", bounce: 0.1 }}
+                >
+                  <object
+                    type="image/svg+xml"
+                    className={styles.Developer}
+                    data="rocketLaunch.svg"
+                    alt="Rocket Ship Moving Over The World"
+                    height={500}
+                    width={500}
+                  ></object>
+                </motion.div>
+              </div>
             </div>
           </div>
 
