@@ -17,16 +17,17 @@
   z-index: 1;
 }
 
+.mainTitle {
+  margin-top: 60px;
+}
 .header {
   display: grid;
   justify-content: center;
   align-items: center;
   max-width: 100%;
   height: 100vh;
-  background-image: url("/static/images/starrySky.jpg");
   min-width: auto;
   background-color: #295270;
-
 }
 
 #main-title {
@@ -41,6 +42,15 @@
 
 .imageColumn {
   text-align: center;
+}
+
+.twinkleStarsContainer {
+  display: flex;
+  position: relative;
+  max-width: 100px;
+  max-height: 100px;
+
+  z-index: 2;
 }
 
 .spaceManContainer {
@@ -199,16 +209,16 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  .mainTitle{
-    display:none;
+  .mainTitle {
+    display: none;
   }
-  .body{
+  .body {
     width: 100%;
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            left: 0;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }

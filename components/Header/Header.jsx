@@ -3,6 +3,7 @@ import Image from "next/image";
 import starrySky from "/public/starrysky.jpg";
 import MainTitle from "/components/Header/MainTitle.js";
 import Particles from "react-tsparticles";
+import Twinkle from "./twinkleStar.jsx";
 import { motion } from "framer-motion";
 
 import styles from "/components/Header/Header.module.scss";
@@ -44,8 +45,20 @@ function Header() {
       <body>
         <div id="header" className={styles.header}>
           <div className={styles.imageColumn}>
+            <div className={styles.twinkleStarsContainer}>
+              <motion.div
+                animate={{ x: 0, y: [-255, 230] }}
+                transition={{
+                  type: "spring",
+                  bounce: 0.1,
+                  delay: 3,
+                  duration: 3,
+                }}
+              >
+                <Twinkle />
+              </motion.div>
+            </div>
             <div className={styles.spaceManContainer}>
-              <br></br>
               <motion.div
                 animate={{ x: 210, y: [-255, 330] }}
                 transition={{
@@ -65,6 +78,7 @@ function Header() {
                 />
               </motion.div>
             </div>
+
             <div className={styles.animationContainer}>
               <Image
                 src={starrySky}
