@@ -63,7 +63,7 @@ const MyBackground = () => {
               background is providing detailed web and app solutions for diverse
               organizations in the industry. Skilled in User Interface and
               Experience UI/UX and have established a strong foundation in
-              MongoDB, Express, React, Node. Currently gaining ground and
+              MongoDB, Express, React, NodeJS. Currently gaining ground and
               experience in providing customized solutions within the Shopify
               realm for small business clients.
             </strong>{" "}

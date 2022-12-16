@@ -1,29 +1,11 @@
-.root {
-  background: linear-gradient(#023047, #61a5c2);
-  /*   color variables */
-  --clr-primary: #29e6a7;
-  --clr-primary-hover: #18c98e;
-  --clr-primary-light: #91f2d2;
-  --clr-accent100: #4dd0e1;
-  --clr-accent200: #651fff;
-  --clr-accent300: #2979ff;
-  --clr-accent400: #00b8d4;
-  --clr-gray100: #f0f7f8;
-  --clr-gray200: #cfd8dc;
-  --clr-gray300: #a7b7be;
-  --clr-gray400: #6b7e86;
-  --clr-gray500: #425a65;
 
-  /*   border radius */
-  --radius: 10rem;
-}
 
 .formWrapper {
   position: relative;
   min-height: 100vh;
   align-items: center;
   width: 100%;
-  background: url(Email.png);
+  background:#3A86FF;
   background-position: center;
   background-size: cover;
   margin: 0px;
@@ -41,24 +23,26 @@
 
 .formContainer {
   display: grid;
+  position:relative;
   justify-content: center;
   width: 37.5rem;
-  background: var(--white);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(58,134,255,1) 35%, rgba(0,212,255,1) 100%);;
   border-radius: 0.1875rem;
-  box-shadow: 0 0.125rem 0.625rem rgba(17, 34, 68, 0.06);
+  margin:0em 40em 0em 40em;
+  top:70px;
   animation: slideInFromLeft 3s;
 }
 
 .formCardGradient {
   height: 5rem;
-  background: linear-gradient(#023047, #61a5c2);
+  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
 }
 
 .formContainer h2 {
   justify-self: center;
   margin: 2rem 0 0.5rem;
   padding: 0.5rem;
-  background: linear-gradient(#023047, #61a5c2);
+  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
   color: #ffff;
   text-transform: uppercase;
   font-weight: 400;
@@ -120,7 +104,7 @@
   width: 300px;
   padding: 0px;
   margin: 0px;
-  background: linear-gradient(#023047, #61a5c2);
+  background:linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
   border-radius: 10px;
   padding: 0.5rem 0;
   font-size: 1rem;

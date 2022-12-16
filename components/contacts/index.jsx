@@ -116,18 +116,7 @@ const Contacts = () => {
 
   return (
     <div id="contacts" className={styles.formWrapper}>
-      <div className={styles.imageWrapper}>
-        <Image
-          src={emails}
-          className={styles.emails}
-          id="emails"
-          alt="mailbox with mail feeding through"
-          a
-          href="./Email.png"
-          height="300"
-          width="300"
-        />
-      </div>
+
       <div className={styles.formContainer}>
         <div className={styles.formCardGradient}></div>
         <h2 className={styles.h2}>Contact Me</h2>

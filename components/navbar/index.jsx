@@ -116,18 +116,20 @@ const Navbar = () => {
   .navbar-nav > li > a {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-    border-top: 0.1875rem solid #256;
+    border-top: #3a86ff
   }
 
   .navbar-nav > li > a:active,
   .navbar-nav > li > a:focus {
-    border-top: 0.1875rem solid #4ab !important;
-    color: #4ab !important;
+    border-top: 0.1875rem solid #fff !important;
+    border-bottom: 0.1875rem solid #fff !important;
+    
+    color: #3a86ff !important;
   }
   
   .navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid #4ab !important;
-    color: #4ab !important;
+    border-top: 0.1875rem solid #3a86ff !important;
+    color: #ffff !important;
   }
   
   

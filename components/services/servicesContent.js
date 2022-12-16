@@ -1,3 +1,5 @@
+import styles from "./Services.module.scss";
+
 export const servicesContent = [
   {
     title: "Web Development",

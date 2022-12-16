@@ -17,7 +17,7 @@ export const content = [
 
   {
     title: "HomeOwnify",
-    subtitle: "In Development: Own a Home",
+    subtitle: "Own a Home",
     Image: homeownify,
     src: "/public/homeOwnifyPhoto.jpg",
     github: "https://github.com/Saizeik/Homeownify",
@@ -26,7 +26,7 @@ export const content = [
 
   {
     title: "JobJourney",
-    subtitle: "Map your Job Search Experience",
+    subtitle: "Map your Journey",
     Image: JobJourney,
     src: "/public/JobJourney.jpg",
     github: "https://github.com/Saizeik/jobJourney",

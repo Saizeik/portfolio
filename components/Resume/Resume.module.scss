@@ -1,13 +1,11 @@
-.root {
-  background: #295270;
-}
+
 
 .resumeMainWrapper {
   max-width: 100%;
   max-height: 100%;
   min-width: auto;
 
-  background: #295270;
+  background: #8338EC;
   animation: slideInFromLeft 1s;
 }
 
@@ -34,7 +32,7 @@
 }
 
 .education:hover {
-  background-color: #4ab;
+  background-color: #3a86ff;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -54,7 +52,7 @@
 }
 
 .experienceBriefCase:hover {
-  background-color: tomato;
+  background-color: #fb5607;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -75,7 +73,7 @@
 
 .resume h1 {
   text-transform: uppercase;
-  color: #4ab;
+  color:#ffff;
   text-align: center;
   font-weight: 900;
   padding: 4rem 0;
@@ -83,18 +81,18 @@
 }
 
 .resume h5 {
-  color: #4ab;
+  color: #ffff;
   font-weight: 900;
 }
 
 .resume h6 {
-  color: #023047;
+  color: #ffbe0b;
   font-weight: 900;
 }
 
 .resume h3 {
   margin-top: 0.3125rem;
-  color: tomato;
+  color: #3a86ff;
   font-weight: 900;
 }
 .p {
@@ -124,7 +122,7 @@
   height: 1rem;
   border-radius: 50%;
   border: 0.1rem solid #000;
-  background: #9bafd9;
+  background: #FF006E;
   margin-top: 0.625rem;
   z-index: 3;
 }

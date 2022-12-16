@@ -1,7 +1,7 @@
 import React from "react";
 import { servicesContent } from "./servicesContent";
 import styles from "./Services.module.scss";
-import Counter from "/components/counter/index.jsx";
+//import Counter from "/components/counter/index.jsx";
 import { motion } from "framer-motion";
 const Services = () => {
   return (
@@ -26,7 +26,7 @@ const Services = () => {
                       }}
                     >
                       <div className={styles.serviceBox}>
-                        <div className={`${styles.card} "card bg-light mb-3"`}>
+                        <div className={styles.card}>
                           <h5 className={styles.title}>{item.title}</h5>
                           <p className={styles.description}>
                             {item.description}
@@ -40,7 +40,7 @@ const Services = () => {
             </div>
           </div>
 
-          <Counter />
+          
         </div>
       </div>
     </div>
