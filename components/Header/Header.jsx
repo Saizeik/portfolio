@@ -5,7 +5,7 @@ import MainTitle from "/components/Header/MainTitle.js";
 import Particles from "react-tsparticles";
 import Twinkle from "./twinkleStar.jsx";
 import { motion } from "framer-motion";
-
+import "animate.css"; 
 import styles from "/components/Header/Header.module.scss";
 
 function Header() {
@@ -141,6 +141,7 @@ function Header() {
           }}
         />
         <div className="header">
+          <h1 className={` animate__animated animate__bounce animate__delay-5s ${styles.mobileTitle}`}>Frontend Web Developer</h1>
           <MainTitle
             className={styles.mainTitle}
             id="mainTitle"

@@ -30,6 +30,12 @@ main {
   display: block;
 }
 
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+  
+ 
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.

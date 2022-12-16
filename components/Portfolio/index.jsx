@@ -60,7 +60,7 @@ const Portfolio = () => {
                         url={"https://linkedin.com"}
                         hashtag="#FrontendDeveloper"
                         quote={
-                          "This is the text which you want to show when people share your portfolio!"
+                          "Professional portfolio of a great frontend developer. Check it out!"
                         }
                       >
                         <FontAwesomeIcon
@@ -72,7 +72,7 @@ const Portfolio = () => {
                         className={styles.shareBtn}
                         url={"https://linkedin.com"}
                         quote={
-                          "This is the text which you want to show when people share your portfolio!"
+                          "Professional portfolio of a great frontend developer. Check it out!"
                         }
                         hashtag="#FrontedDeveloper"
                       >
@@ -85,7 +85,7 @@ const Portfolio = () => {
                         className={styles.shareBtn}
                         url={"https://twitter.com"}
                         quote={
-                          "This is the text which you want to show when people share your portfolio!"
+                          "Professional portfolio of a great frontend developer. Check it out!"
                         }
                         hashtag="#FrontedDeveloper"
                       >
@@ -99,7 +99,7 @@ const Portfolio = () => {
                         className={styles.shareBtn}
                         url={"https://facebook.com"}
                         quote={
-                          "This is the text which you want to show when people share your portfolio!"
+                          "Professional portfolio of a frontend developer. Check it out!"
                         }
                         hashtag="#FrontedDeveloper"
                       >
