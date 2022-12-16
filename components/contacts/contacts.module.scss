@@ -1,11 +1,9 @@
-
-
 .formWrapper {
   position: relative;
   min-height: 100vh;
   align-items: center;
   width: 100%;
-  background:#3A86FF;
+  background: #3a86ff;
   background-position: center;
   background-size: cover;
   margin: 0px;
@@ -23,26 +21,39 @@
 
 .formContainer {
   display: grid;
-  position:relative;
+  position: relative;
   justify-content: center;
   width: 37.5rem;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(58,134,255,1) 35%, rgba(0,212,255,1) 100%);;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(58, 134, 255, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
   border-radius: 0.1875rem;
-  margin:0em 40em 0em 40em;
-  top:70px;
+  margin: 0em 40em 0em 40em;
+  top: 70px;
   animation: slideInFromLeft 3s;
 }
 
 .formCardGradient {
   height: 5rem;
-  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
 }
 
 .formContainer h2 {
   justify-self: center;
   margin: 2rem 0 0.5rem;
   padding: 0.5rem;
-  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
   color: #ffff;
   text-transform: uppercase;
   font-weight: 400;
@@ -104,7 +115,11 @@
   width: 300px;
   padding: 0px;
   margin: 0px;
-  background:linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(152, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
   border-radius: 10px;
   padding: 0.5rem 0;
   font-size: 1rem;
@@ -461,7 +476,7 @@
 
   .h2 {
     position: relative;
-    top: -190px;
+    top:-60px;
   }
 
   .envelopeContainer {
@@ -469,12 +484,22 @@
     top: -65px;
   }
 
+  .formCardGradient {
+    position: relative;
+    height:3em;
+    top:-70px;
+  }
+
   .formContainer {
-    height: 860px;
+    position: relative;
+     float:left;
+    height: 660px;
     width: 300px;
     flex-direction: column;
     position: relative;
-    left: 45px;
+    left: -596px;
+    z-index:0;
+  
   }
   .form {
     position: relative;
