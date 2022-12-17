@@ -5,9 +5,12 @@
   max-height: 100%;
   min-width: auto;
 
-  background: #8338EC;
-  animation: slideInFromLeft 1s;
-}
+  background: linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(217, 100%, 61%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(217, 100%, 61%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(217, 100%, 61%, 1) 100%);
+}  
 
 .educationImageWrapper {
   left: 130px;
@@ -32,7 +35,7 @@
 }
 
 .education:hover {
-  background-color: #3a86ff;
+  background-color: #4cc9f0;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -52,7 +55,7 @@
 }
 
 .experienceBriefCase:hover {
-  background-color: #fb5607;
+  background-color: #8338ec;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -92,7 +95,7 @@
 
 .resume h3 {
   margin-top: 0.3125rem;
-  color: #3a86ff;
+  color: #4cc9f0;
   font-weight: 900;
 }
 .p {
@@ -122,7 +125,7 @@
   height: 1rem;
   border-radius: 50%;
   border: 0.1rem solid #000;
-  background: #FF006E;
+  background: #f1faee;
   margin-top: 0.625rem;
   z-index: 3;
 }

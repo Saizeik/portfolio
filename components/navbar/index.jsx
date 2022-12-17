@@ -111,12 +111,14 @@ const Navbar = () => {
   
   .nav ul li {
     text-transform: uppercase;
+    border-bottom: none;
   }
   
   .navbar-nav > li > a {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     border-top: #3a86ff
+    border-bottom: none;
   }
 
   .navbar-nav > li > a:active,
@@ -128,7 +130,8 @@ const Navbar = () => {
   }
   
   .navbar-nav > li > a:hover {
-    border-top: 0.1875rem solid #3a86ff !important;
+    border-top: hidden;
+    border-top:none;
     color: #ffff !important;
   }
   

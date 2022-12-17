@@ -50,13 +50,7 @@ const MyBackground = () => {
       </motion.div>
 
       <div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          transition={{ type: "spring" }}
-          variants={me}
-        >
+       
           <p className={styles.p}>
             <strong>
               Creative Front End Web Development is my love and passion! My
@@ -68,7 +62,7 @@ const MyBackground = () => {
               realm for small business clients.
             </strong>{" "}
           </p>
-        </motion.div>
+        
       </div>
     </>
   );
