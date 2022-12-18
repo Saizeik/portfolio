@@ -12,16 +12,19 @@
 
 .navLink {
   justify-content: space-between;
-  color: #3a86ff;
+  color: #00FFFF;
   font-weight: bold;
   font-size: 18px;
   font-family: "Anton", sans-serif;
+  border-bottom: hidden;
+  text-decoration:none;
   
 }
 .ul {
   color: white;
   font-weight: bold;
   font-size: 14px;
+  border-bottom: hidden;
  
 }
 
@@ -76,6 +79,7 @@
 
 /* Tablets and under */
 @media (max-width: 768px) {
+  
   .display-flex,
   .display-grid,
   .navLink,
@@ -84,12 +88,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
+  .navbar{
+    z-index: 2;
+  }
 }
 
 /* Mobile */
 @media (max-width: 500px) {
   .navbar {
     height: 110px;
+    
   }
 
   .navbar .flex {

@@ -5,11 +5,14 @@
   max-height: 100%;
   min-width: auto;
 
-  background: linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(217, 100%, 61%, 1) 100%);
+  background: hsla(218, 100%, 57%, 1);
 
-  background: -moz-linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(217, 100%, 61%, 1) 100%);
+  background: linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
   
-  background: -webkit-linear-gradient(90deg, hsla(265, 83%, 57%, 1) 0%, hsla(217, 100%, 61%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  
 }  
 
 .educationImageWrapper {
@@ -35,7 +38,7 @@
 }
 
 .education:hover {
-  background-color: #4cc9f0;
+  background-color: #00FFFF;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -55,7 +58,7 @@
 }
 
 .experienceBriefCase:hover {
-  background-color: #8338ec;
+  background-color: black;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -89,7 +92,7 @@
 }
 
 .resume h6 {
-  color: #ffbe0b;
+  color: #00FFFF;
   font-weight: 900;
 }
 

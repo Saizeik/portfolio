@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   top: 0px;
-  color: #3a86ff;
+  color: #2272FF;
 }
 
 .grid {
@@ -55,7 +55,13 @@ figure.effect figcaption {
   margin-top: -4rem;
   padding: 0.5em;
   border-radius:5px;
-  background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+  background: hsla(180, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(180, 100%, 50%, 1) 0%, hsla(223, 98%, 25%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(180, 100%, 50%, 1) 0%, hsla(223, 98%, 25%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(180, 100%, 50%, 1) 0%, hsla(223, 98%, 25%, 1) 100%);
   color: #ffff;
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);

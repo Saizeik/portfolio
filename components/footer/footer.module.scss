@@ -10,7 +10,12 @@
 
 .footer {
   position: relative;
-  background: #e63946;
+  background: linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+
   margin: 0px;
   max-width: 100%;
   min-height: 15vh;

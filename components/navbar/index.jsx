@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./navbar.module.scss";
-import { Link } from "react-scroll";
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
+
+
 
 const Navbar = () => {
   return (
@@ -73,6 +77,7 @@ const Navbar = () => {
                 <li className="nav-item">
                   <Link
                     smooth={true}
+                    
                     to="services"
                     offset={-55}
                     className={styles.navLink}
@@ -100,6 +105,7 @@ const Navbar = () => {
       <style>{`
     .nav {
     background: #256;
+    
   }
   
   .nav a.nav-link {
@@ -107,6 +113,7 @@ const Navbar = () => {
     font-size: 0.8rem;
     letter-spacing: 0.0375rem;
     cursor: pointer;
+    
   }
   
   .nav ul li {
@@ -126,11 +133,11 @@ const Navbar = () => {
     border-top: 0.1875rem solid #fff !important;
     border-bottom: 0.1875rem solid #fff !important;
     
-    color: #3a86ff !important;
+    color: #ffff !important;
   }
   
   .navbar-nav > li > a:hover {
-    border-top: hidden;
+    
     border-top:none;
     color: #ffff !important;
   }
