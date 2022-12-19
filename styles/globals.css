@@ -11,7 +11,7 @@ html {
   margin: 0px;
   padding: 0px;
   width: 100%;
-   line-height: 1.15; /* 1 */
+  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -32,8 +32,6 @@ main {
 
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
-  
- 
 }
 
 /**
@@ -396,75 +394,73 @@ template {
 }
 /* Mobile */
 @media (max-width: 500px) {
- 
-  body, html{
-            height: 100%;
-            margin: 0;
-            max-width: 100%;
-            overflow-x: auto;
-          }
-    
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .navbar-toggler {
+    display: none;
+  }
 }
 
 /*Star Animation */
 
 @keyframes star {
   to {
-    zoom:10%;
-    opacity:0;
+    zoom: 10%;
+    opacity: 0;
   }
-  from{
-    zoom:100%;
-      opacity:1;
+  from {
+    zoom: 100%;
+    opacity: 1;
   }
 }
 .star {
-animation-name: star;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 2s;
-animation-direction: alternate;
-z-index: 1;
-
+  animation-name: star;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  z-index: 1;
 }
 @keyframes star1 {
   to {
- 
-    opacity:0;
+    opacity: 0;
   }
-  from{
- 
-      opacity:1;
+  from {
+    opacity: 1;
   }
 }
 .star1 {
-animation-name: star1;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 3s;
-animation-direction: alternate;
-z-index: 1;
+  animation-name: star1;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  z-index: 1;
 }
 @keyframes star2 {
   0% {
-  opacity:1;
-}
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
-
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .star2 {
-animation-name: star2;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 5s;
-animation-direction: alternate;
-z-index: 1;
+  animation-name: star2;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  z-index: 1;
 }
