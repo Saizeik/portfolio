@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   top: 0px;
-  color: #2272FF;
+  color: #353535;
 }
 
 .grid {
@@ -38,7 +38,7 @@
 .h1 {
   font-family: "Bangers", cursive, serif;
   animation: slideInFromLeft 2s;
-  color:#3a86ff;
+  color:#353535;
 
 }
 
@@ -55,13 +55,13 @@ figure.effect figcaption {
   margin-top: -4rem;
   padding: 0.5em;
   border-radius:5px;
-  background: hsla(180, 100%, 50%, 1);
+  background: hsla(0, 0%, 21%, 1);
 
-background: linear-gradient(90deg, hsla(180, 100%, 50%, 1) 0%, hsla(223, 98%, 25%, 1) 100%);
+background: linear-gradient(90deg, hsla(0, 0%, 21%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
 
-background: -moz-linear-gradient(90deg, hsla(180, 100%, 50%, 1) 0%, hsla(223, 98%, 25%, 1) 100%);
+background: -moz-linear-gradient(90deg, hsla(0, 0%, 21%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
 
-background: -webkit-linear-gradient(90deg, hsla(180, 100%, 50%, 1) 0%, hsla(223, 98%, 25%, 1) 100%);
+background: -webkit-linear-gradient(90deg, hsla(0, 0%, 21%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
   color: #ffff;
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);
@@ -168,7 +168,7 @@ figure.effect:hover h2 {
 
 figure.effect:hover p.description {
   opacity: 1;
-  background: #3a86ff;
+  background: #353535;
   position: absolute;
 }
 

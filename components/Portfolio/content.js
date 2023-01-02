@@ -1,11 +1,10 @@
-
 import JobJourney from "/public/JobJourney.jpg";
 import nucampsite from "/public/nucampsite.jpg";
 import homeownify from "/public/homeOwnifyPhoto.jpg";
 import eshop from "/public/eshop.jpg";
+import financialtools from "/public/financialTools.png";
 
 export const content = [
-
   {
     title: "E-commerce Store",
     subtitle: "Sneakers",
@@ -33,8 +32,6 @@ export const content = [
     demo: "https://jobjourney.fly.dev",
   },
 
-
-
   {
     title: "Nucampsite",
     subtitle: "Nucamp",
@@ -42,5 +39,14 @@ export const content = [
     src: "/public/nucampsite.jpg",
     github: "https://github.com/Saizeik/Nucampsite",
     demo: "https://nathanwalkernucamp.netlify.app",
+  },
+
+  {
+    title: "Financial Tools",
+    subtitle: "Maximize your Money",
+    Image: financialtools,
+    src: "/public/financialTools.png",
+    github: "https://github.com/Saizeik/FInancialTools",
+    demo: "https://peaceful-lolly-c2cb0a.netlify.app",
   },
 ];

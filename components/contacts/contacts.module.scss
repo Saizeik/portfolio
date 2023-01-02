@@ -3,7 +3,7 @@
   min-height: 100vh;
   align-items: center;
   width: 100%;
-  background: black;
+  background: #f6fff8;
   background-position: center;
   background-size: cover;
   margin: 0px;
@@ -24,12 +24,7 @@
   position: relative;
   justify-content: center;
   width: 37.5rem;
-  background: linear-gradient(
-    90deg,
-    
-    rgba(58, 134, 255, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: black;
   border-radius: 0.1875rem;
   margin: 0em 40em 0em 40em;
   top: 70px;
@@ -38,12 +33,7 @@
 
 .formCardGradient {
   height: 5rem;
-  
-background: linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  background:#284B63;
   
 }
 
@@ -51,11 +41,13 @@ background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0
   justify-self: center;
   margin: 2rem 0 0.5rem;
   padding: 0.5rem;
-  background: linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  background: hsla(204, 42%, 27%, 1);
 
-  background: -moz-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+background: linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
+
+background: -moz-linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
+
+background: -webkit-linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
   
   color: #ffff;
   text-transform: uppercase;
@@ -118,12 +110,13 @@ background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0
   width: 300px;
   padding: 0px;
   margin: 0px;
-  background: linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  background: hsla(0, 0%, 85%, 1);
 
-  background: -moz-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  background: linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsla(210, 9%, 31%, 1) 99%);
   
-  background: -webkit-linear-gradient(90deg, hsla(218, 100%, 57%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsla(210, 9%, 31%, 1) 99%);
   
+  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsla(210, 9%, 31%, 1) 99%);
   border-radius: 10px;
   padding: 0.5rem 0;
   font-size: 1rem;
