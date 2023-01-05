@@ -1,13 +1,10 @@
-
-
 .resumeMainWrapper {
   max-width: 100%;
   max-height: 100%;
   min-width: auto;
 
   background: #fefaf6;
-  
-}  
+}
 
 .educationImageWrapper {
   left: 130px;
@@ -22,7 +19,7 @@
 }
 
 .education {
-  background-color:#21324e;
+  background-color: #21324e;
   border-radius: 10px;
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
@@ -62,7 +59,6 @@
 
 .resume {
   padding: 0.7rem;
-  
 }
 
 .wrapper {
@@ -70,12 +66,11 @@
   padding: 3.125rem 0;
   margin-left: 8.9rem;
   overflow: hidden;
-
 }
 
 .resume h1 {
   text-transform: uppercase;
-  color:black;
+  color: black;
   text-align: center;
   font-weight: 900;
   padding: 4rem 0;
@@ -96,11 +91,11 @@
   margin-top: 0.3125rem;
   color: #c7cbf5;
   font-weight: 900;
-  
 }
 .p {
   color: black;
-  font-weight: 900;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .wrapper::before {
@@ -123,7 +118,7 @@
 
 .marker {
   width: 1rem;
-  display:none;
+  display: none;
   height: 1rem;
   border-radius: 50%;
   border: 0.1rem solid #000;
@@ -220,7 +215,6 @@
 @media (min-width: 768px) {
   .resume .container {
     padding-left: 0;
-   
   }
 
   .wrapper::before {
@@ -255,12 +249,10 @@
   .timelineBlock {
     position: relative;
     left: 205px;
-   
   }
 }
 
 /* Tablets and under */
-
 
 @media (max-width: 768px) {
   .root .resumeMainWrapper,
