@@ -5,7 +5,7 @@
   max-height: 100%;
   min-width: auto;
 
-  background: #adb5bd;
+  background: #fefaf6;
   
 }  
 
@@ -22,7 +22,7 @@
 }
 
 .education {
-  background-color: #ffff;
+  background-color:#21324e;
   border-radius: 10px;
   -webkit-transition: background-color 1000ms linear;
   -moz-transition: background-color 1000ms linear;
@@ -32,7 +32,7 @@
 }
 
 .education:hover {
-  background-color: #00FFFF;
+  background-color: black;
   display: inline-block;
   margin: 0 0.5rem;
 
@@ -41,7 +41,7 @@
 }
 
 .experienceBriefCase {
-  background-color: #ffff;
+  background-color: #21324e;
   background-size: cover;
   border-radius: 10px;
   -webkit-transition: background-color 1000ms linear;
@@ -62,6 +62,7 @@
 
 .resume {
   padding: 0.7rem;
+  
 }
 
 .wrapper {
@@ -69,11 +70,12 @@
   padding: 3.125rem 0;
   margin-left: 8.9rem;
   overflow: hidden;
+
 }
 
 .resume h1 {
   text-transform: uppercase;
-  color:#ffff;
+  color:black;
   text-align: center;
   font-weight: 900;
   padding: 4rem 0;
@@ -81,22 +83,24 @@
 }
 
 .resume h5 {
-  color: #ffff;
+  color: #58e1c5;
   font-weight: 900;
 }
 
 .resume h6 {
-  color: #00FFFF;
+  color: #1d4752;
   font-weight: 900;
 }
 
 .resume h3 {
   margin-top: 0.3125rem;
-  color: #4cc9f0;
+  color: #c7cbf5;
   font-weight: 900;
+  
 }
 .p {
-  color: #fff;
+  color: black;
+  font-weight: 900;
 }
 
 .wrapper::before {
@@ -119,12 +123,14 @@
 
 .marker {
   width: 1rem;
+  display:none;
   height: 1rem;
   border-radius: 50%;
   border: 0.1rem solid #000;
-  background: #f1faee;
+  background: black;
   margin-top: 0.625rem;
   z-index: 3;
+  list-style: none;
 }
 
 .timelineBlock {

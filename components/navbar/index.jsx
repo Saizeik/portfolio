@@ -109,7 +109,7 @@ const Navbar = () => {
   }
   
   .nav a.nav-link {
-    color: #fff !important;
+    color: #0000 !important;
     font-size: 0.8rem;
     letter-spacing: 0.0375rem;
     cursor: pointer;
@@ -139,7 +139,7 @@ const Navbar = () => {
   .navbar-nav > li > a:hover {
     
     border-top:none;
-    color: #ffff !important;
+    color: black !important;
   }
   
   

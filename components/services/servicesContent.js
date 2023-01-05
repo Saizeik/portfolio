@@ -29,13 +29,13 @@ export const servicesContent = [
   {
     title: "App Development",
     description:
-      ".",
+      "",
     className: "iconAppDev",
   },
   {
     title: "Support",
     description:
-      ".",
+      "",
     className: "iconSupport",
   },
 ];

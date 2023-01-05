@@ -6,7 +6,7 @@ import financialtools from "/public/financialTools.png";
 
 export const content = [
   {
-    title: "E-commerce Store",
+    title: "Ecommerce Store",
     subtitle: "Sneakers",
     Image: eshop,
     src: "/public/eshop.jpg",
@@ -25,7 +25,7 @@ export const content = [
 
   {
     title: "JobJourney",
-    subtitle: "Map your Journey",
+    subtitle: "Map your search",
     Image: JobJourney,
     src: "/public/JobJourney.jpg",
     github: "https://github.com/Saizeik/jobJourney",
@@ -42,8 +42,8 @@ export const content = [
   },
 
   {
-    title: "Financial Tools",
-    subtitle: "Maximize your Money",
+    title: "Financial Tweaks",
+    subtitle: "",
     Image: financialtools,
     src: "/public/financialTools.png",
     github: "https://github.com/Saizeik/FInancialTools",

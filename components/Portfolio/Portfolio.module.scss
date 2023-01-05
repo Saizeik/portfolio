@@ -2,8 +2,9 @@
   position: relative;
   padding: 0;
   margin: 0;
-  top: 0px;
-  color: #353535;
+  top: -65px;
+  color: #21324e;
+  background: #fefaf6;
 }
 
 .grid {
@@ -44,7 +45,7 @@
 
 .grid figure figcaption {
   padding: 1em;
-  color: #fff;
+  color: #fefaf6;
   text-transform: uppercase;
   font-size: 1em;
   backface-visibility: hidden;
@@ -55,17 +56,12 @@ figure.effect figcaption {
   margin-top: -4rem;
   padding: 0.5em;
   border-radius:5px;
-  background: hsla(0, 0%, 21%, 1);
-
-background: linear-gradient(90deg, hsla(0, 0%, 21%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
-
-background: -moz-linear-gradient(90deg, hsla(0, 0%, 21%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
-
-background: -webkit-linear-gradient(90deg, hsla(0, 0%, 21%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
-  color: #ffff;
+  background: black;
+  color: #fefaf6;
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);
   height: 80px;
+  font-family: "Bangers", cursive, serif;
 }
 
 .grid figure h2 {

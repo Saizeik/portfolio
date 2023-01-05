@@ -31,7 +31,7 @@ const Portfolio = () => {
             textAlign: "center",
             fontWeight: "900",
             textTransform: "uppercase",
-            color: "#353535",
+            color: "#21324e",
             margin: "4rem 0",
           }}
         >

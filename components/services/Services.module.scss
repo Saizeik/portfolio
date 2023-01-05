@@ -1,12 +1,6 @@
 .mainServicesWrapper {
   position: relative;
-  background: hsla(0, 0%, 100%, 1);
-
-background: linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 99%);
-
-background: -moz-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 99%);
-
-background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 0%, 1) 99%);
+  background: #fefaf6;
   max-width: 100%;
   min-width: auto;
   padding-bottom: 100px;
@@ -20,7 +14,9 @@ background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 
 
 .servicesWrapper h1 {
   text-transform: uppercase;
-  color: #ffff;
+  color:  #21324e;
+
+  
   text-align: center;
   font-weight: 900;
   margin-bottom: 5rem;
@@ -31,42 +27,42 @@ background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 
   font-family: "Font Awesome 5 Pro";
   content: "\f1c9";
   font-size: 1.7em;
-  color: tomato;
+
 }
 
 .iconDesign::before {
   font-family: "Font Awesome 5 Pro";
   content: "\f5ae";
   font-size: 1.7em;
-  color: tomato;
+ 
 }
 
 .iconGoogleAdwords::before {
   font-family: "Font Awesome 5 Brands";
   content: "\f1a0";
   font-size: 1.7em;
-  color: tomato;
+ 
 }
 
 .iconSmm::before {
   font-family: "Font Awesome 5 Pro";
   content: "\f0c0";
   font-size: 1.7em;
-  color: tomato;
+ 
 }
 
 .iconAppDev::before {
   font-family: "Font Awesome 5 Pro";
   content: "\f3cd";
   font-size: 1.7em;
-  color: tomato;
+
 }
 
 .iconSupport::before {
   font-family: "Font Awesome 5 Pro";
   content: "\f2a0";
   font-size: 1.7em;
-  color: tomato;
+
 }
 
 .serviceBox {
@@ -79,8 +75,15 @@ background: -webkit-linear-gradient(90deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 
   border-radius: 10px;
   height: 14rem;
   text-align: center;
-  background: #ffff;
-  border-bottom: 3px solid #3C6E71
+  background: hsla(283, 55%, 91%, 1);
+
+  background: linear-gradient(90deg, hsla(283, 55%, 91%, 1) 0%, hsla(349, 100%, 96%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(283, 55%, 91%, 1) 0%, hsla(349, 100%, 96%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(283, 55%, 91%, 1) 0%, hsla(349, 100%, 96%, 1) 100%);
+  border-bottom: 3px solid #56ddc2;
+  font-family: "Bangers", cursive, serif;
 }
 
 .card {

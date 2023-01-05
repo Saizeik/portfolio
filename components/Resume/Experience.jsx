@@ -53,7 +53,7 @@ const Experience = () => {
                   <div
                     className={styles.container.wrapper}
                     style={{
-                      display: showMeEducation ? "block" : "none",
+                      display: showMeEducation ? "block" : "none", 
                     }}
                   >
                     <div className={styles.timelineBlock} id="overlayEducation">

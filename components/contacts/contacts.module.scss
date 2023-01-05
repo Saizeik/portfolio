@@ -24,7 +24,7 @@
   position: relative;
   justify-content: center;
   width: 37.5rem;
-  background: black;
+  background: #51d1ba;
   border-radius: 0.1875rem;
   margin: 0em 40em 0em 40em;
   top: 70px;
@@ -33,21 +33,14 @@
 
 .formCardGradient {
   height: 5rem;
-  background:#284B63;
-  
+  background: #112240;
 }
 
 .formContainer h2 {
   justify-self: center;
   margin: 2rem 0 0.5rem;
   padding: 0.5rem;
-  background: hsla(204, 42%, 27%, 1);
-
-background: linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
-
-background: -moz-linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
-
-background: -webkit-linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%, 85%, 1) 99%);
+  background:#b9c3e2;
   
   color: #ffff;
   text-transform: uppercase;
@@ -110,14 +103,7 @@ background: -webkit-linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%
   width: 300px;
   padding: 0px;
   margin: 0px;
-  background: hsla(0, 0%, 85%, 1);
-
-  background: linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsla(210, 9%, 31%, 1) 99%);
-  
-  background: -moz-linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsla(210, 9%, 31%, 1) 99%);
-  
-  background: -webkit-linear-gradient(90deg, hsla(0, 0%, 85%, 1) 0%, hsla(210, 9%, 31%, 1) 99%);
-  border-radius: 10px;
+  background: #b9c3e2;
   padding: 0.5rem 0;
   font-size: 1rem;
   font-family: "Bangers", cursive;
@@ -136,7 +122,7 @@ background: -webkit-linear-gradient(90deg, hsla(204, 42%, 27%, 1) 0%, hsla(0, 0%
   padding: 2rem 3rem;
 
   &:hover {
-    background: #18c98e;
+    background: black;
   }
 }
 

@@ -5,7 +5,7 @@
 }
 
 .h1 {
-  color:#284B63;
+  color:#21324e;
   text-align: center;
   font-weight: 900;
   margin: 0 0 4rem;
@@ -21,12 +21,89 @@
   font-family:'Bangers', cursive; 
   animation: slideInFromBottom 3s;
 }
+.aboutMeContainer{
+  
+display:inline-block;
+
+margin-left:0px;
+margin-top:0px;
+  position:relative;
+ 
+  border-radius: 10px;
+  margin-top:12px;
+
+
+	align-items: flex-end;
+	
+}
+
+
+
+
+.aboutMeContainer .card {
+  
+  position:relative;
+  overflow:hidden;
+  width:350px;
+  margin:0 auto;
+  background:#333;
+  padding:20px;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5)
+}
+.aboutMeContainer:hover {
+  z-index:1;
+  position:relative;
+  top:calc(100% - 2px);
+
+  background: hsla(283, 55%, 91%, 1);
+
+  background: linear-gradient(90deg, hsla(283, 55%, 91%, 1) 0%, hsla(349, 100%, 96%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(283, 55%, 91%, 1) 0%, hsla(349, 100%, 96%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(283, 55%, 91%, 1) 0%, hsla(349, 100%, 96%, 1) 100%);
+  transition:0.5s;
+  
+}
+
+.aboutMeContainer .card .content {
+  z-index:2; 
+  position:relative;
+}
+
+.aboutMeContainer .card:hover  .layer{
+  top:0;
+}
+
+.aboutMeContainer .card .content p {
+  font-size:14px;
+  line-height:24px;
+  color:#fff;
+  
+}
+.aboutMeContainer .card .content .image {
+  width:100px; height:100px;
+  margin:0 auto;
+  border-radius:50%;
+  overflow:hidden;
+  border: 4px solid white;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  
+}
+
+
+
 
  .p {
+
   text-align: left;
-  color: #284B63;
+  color: #21324e;
+  font-weight: 900;
   letter-spacing: 0.5px;
   line-height: 200%;
+  padding-left:8px;
 }
 
 .photoWrapper {
