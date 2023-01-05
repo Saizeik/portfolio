@@ -14,11 +14,12 @@
 }
 
 .typewriter{
-  color: #2272FF;
+
   text-align: center;
+  color:#4bc0ae;
   font-weight: 900;
-  margin: 0 0 4rem;
-  font-family:'Bangers', cursive; 
+  margin-top:10px;
+
   animation: slideInFromBottom 3s;
 }
 .aboutMeContainer{
@@ -110,6 +111,7 @@ margin-top:0px;
   position: relative;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-bottom: 10px;
 }
 
 .photoOverlay {

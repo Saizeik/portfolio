@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 import styles from "/components/About/About.module.scss";
 export default function TypingEffect() {
   return (
-    <div>
+    <div className={styles.typewriter}>
       
       <Typewriter 
         onInit={(typewriter) => {
@@ -12,7 +12,8 @@ export default function TypingEffect() {
               console.log('Name is typed out!');
             })
             .start();
-        }}
+        }} 
+  
       />
     </div>
   );
