@@ -2,7 +2,8 @@
   position: relative;
   padding: 0;
   margin: 0;
-  top: -65px;
+
+  top: 0px;
   color: #21324e;
   background: #fefaf6;
 }
@@ -254,6 +255,11 @@ figure.effect:hover p.description {
 
 /* Mobile */
 @media (max-width: 500px) {
+
+  .portfolioContainer{
+    margin-top: 25px;
+   padding-top:5px;
+  }
   .grid {
     height: 110px;
     width: 300px;
