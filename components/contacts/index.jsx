@@ -12,8 +12,8 @@ import Image from "next/image";
 const service_ID = "service_859vvsp";
 const template_ID = "template_ilpkg0r";
 const user_ID = "user_39Wd73TWkWKHkCy6Ylie5";
-const message =
-  "The form sent successfuly! I'll contact you as soon as possible!";
+const message ="The form sent successfully! I'll contact you soon!";
+console.log("message", message)
 
 const Contacts = () => {
   const [names, setNames] = useState("");
@@ -118,7 +118,8 @@ const Contacts = () => {
     <div id="contacts" className={styles.formWrapper}>
 
       <div className={styles.formContainer}>
-        <div className={styles.formCardGradient}></div>
+
+        <div className={styles.formCardGradient}><h6 className={styles.contactMe}>Say Hello</h6></div>
         <h2 className={styles.h2}>Contact Me</h2>
         <span className={styles.successMessage} id="successMessage">
           {successMessage}

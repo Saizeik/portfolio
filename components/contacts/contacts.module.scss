@@ -33,7 +33,17 @@
 
 .formCardGradient {
   height: 5rem;
+  display:flex;
+  position:relative;
   background: #112240;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactMe{
+  color: #ffff;
+  font-size: 40px;
+  font-family: "Bangers", cursive;    
 }
 
 .formContainer h2 {

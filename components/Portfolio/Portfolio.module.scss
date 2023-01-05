@@ -86,6 +86,7 @@ figure.effect figcaption {
 
 figure.effect h2 {
   float: left;
+  visibility: hidden;
 }
 
 figure.effect p.iconLinks .shareBtn {
@@ -115,6 +116,7 @@ figure.effect:hover figcaption,
 figure.effect:hover h2,
 figure.effect:hover p.iconLinks .shareBtn {
   transform: translate3d(0, 0, 0);
+  visibility: visible;
 }
 
 .iconFacebook::before {
@@ -136,9 +138,13 @@ figure.effect:hover p.iconLinks .shareBtn {
   font-family: "Font Awesome 5 Brands";
   content: "\f281";
 }
+.shareBtn{
+  visibility: hidden;
+}
 
 figure.effect p.iconLinks .shareBtn span::before {
   display: inline-block;
+  visibility: hidden;
   padding: 0.5rem 0.625rem;
 }
 
