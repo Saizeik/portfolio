@@ -20,7 +20,7 @@ export const content = [
     Image: homeownify,
     src: "/public/homeOwnifyPhoto.jpg",
     github: "https://github.com/Saizeik/Homeownify",
-    demo: "https://homeownify.netlify.app",
+    demo: "In Development",
   },
 
   {
@@ -28,8 +28,8 @@ export const content = [
     subtitle: "Map your search",
     Image: JobJourney,
     src: "/public/JobJourney.jpg",
-    github: "https://github.com/Saizeik/jobJourney",
-    demo: "https://jobjourney.fly.dev",
+    github: "https://github.com/Saizeik/jobJourneys",
+    demo: "https://jobjourneys.vercel.app",
   },
 
   {
