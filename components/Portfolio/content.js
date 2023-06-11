@@ -32,14 +32,6 @@ export const content = [
     demo: "https://jobjourneys.vercel.app",
   },
 
-  {
-    title: "Nucampsite",
-    subtitle: "Nucamp",
-    Image: nucampsite,
-    src: "/public/nucampsite.jpg",
-    github: "https://github.com/Saizeik/Nucampsite",
-    demo: "https://nathanwalkernucamp.netlify.app",
-  },
 
   {
     title: "Financial Tweaks",

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TypingEffect from "./typeWriter.js";
-import Typewriter from "typewriter-effect";
+
 import styles from "/components/About/About.module.scss";
 
 const MyBackground = () => {
@@ -28,16 +28,7 @@ const MyBackground = () => {
     },
   };
 
-  const me = {
-    hidden: { scale: 0 },
-    visible: {
-      scale: 1,
-      transition: {
-        duration: 4.5,
-      },
-    },
-  };
- 
+  
 
   return (
     <>
@@ -50,23 +41,17 @@ const MyBackground = () => {
       >
         <TypingEffect />
       </motion.div>
-     
+
       <div className={styles.aboutMeContainer}>
-       
         <p className={styles.p}>
-          
-            Creative Front End Web Development is my love and passion! My
-            background is providing detailed web and app solutions for diverse
-            organizations in the industry. Skilled in User Interface and
-            Experience UI/UX and have established a strong foundation in
-            MongoDB, Express, React, NodeJS. Experienced in providing customized
-            solutions within the Shopify realm for small business clients.
-    
+          Creative Front End Web Development is my love and passion! My
+          background is providing detailed web and app solutions for diverse
+          organizations in the industry. Skilled in User Interface and
+          Experience UI/UX and have established a strong foundation in MongoDB,
+          Express, React, NodeJS. Experienced in providing customized solutions
+          within the Shopify realm for small business clients.
         </p>
-        </div>
-      
-      
-      
+      </div>
     </>
   );
 };
