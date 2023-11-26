@@ -11,7 +11,7 @@ export const content = [
     Image: eshop,
     src: "/public/eshop.jpg",
     github: "https://github.com/Saizeik/eShop",
-    demo: "https://practical-golick-e23c7b.netlify.app",
+    demo: "e-shop-ten-alpha.vercel.app",
   },
 
   {
@@ -39,6 +39,6 @@ export const content = [
     Image: financialtools,
     src: "/public/financialTools.png",
     github: "https://github.com/Saizeik/FInancialTools",
-    demo: "https://peaceful-lolly-c2cb0a.netlify.app",
+    demo: "https://financial-tools-eta.vercel.app",
   },
 ];

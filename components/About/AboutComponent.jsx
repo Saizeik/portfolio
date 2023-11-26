@@ -2,9 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "/components/About/About.module.scss";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import MyBackground from "./aboutMe.js"
-
+import MyBackground from "./aboutMe.js";
 
 import {
   FacebookShareButton,
@@ -46,7 +44,7 @@ const About = () => {
                   <>
                     <FacebookShareButton
                       className={styles.iconButton}
-                      url={"https://reactjs.org"}
+                      url={"https://nathanwalker.co"}
                       quote={
                         "Thank you for sharing! I'm a Front End Developer with expertise in User Interface and Experience design. I love what I do and you will too!"
                       }
@@ -56,7 +54,7 @@ const About = () => {
                     </FacebookShareButton>
                     <TwitterShareButton
                       className={styles.iconButton}
-                      url={"https://reactjs.org"}
+                      url={"https://nathanwalker.co"}
                       quote={
                         "Thank you for sharing! I'm a Front End Developer with expertise in User Interface and Experience design. I love what I do and you will too!"
                       }
@@ -96,7 +94,7 @@ const About = () => {
                     </LinkedinShareButton>
                     <WhatsappShareButton
                       className={styles.iconButton}
-                      url={"https://reactjs.org"}
+                      url={"https://nathanwalker.co"}
                       quote={
                         "Thank you for sharing! I'm a Full Stack Developer with expertise in User Interface and Experience design. I love what I do and you will too!"
                       }
@@ -112,10 +110,9 @@ const About = () => {
           <div className="col-lg-6 col-12 about-right">
             <>
               <h4>
-               <MyBackground /> 
+                <MyBackground />
               </h4>
             </>
-            
           </div>
         </div>
       </div>
