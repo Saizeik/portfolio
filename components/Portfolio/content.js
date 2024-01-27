@@ -11,7 +11,7 @@ export const content = [
     Image: eshop,
     src: "/public/eshop.jpg",
     github: "https://github.com/Saizeik/eShop",
-    demo: "e-shop-ten-alpha.vercel.app",
+    demo: "https://e-shop-ten-alpha.vercel.app",
   },
 
   {
