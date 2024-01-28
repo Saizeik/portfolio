@@ -13,7 +13,7 @@ const service_ID = "service_859vvsp";
 const template_ID = "template_ilpkg0r";
 const user_ID = "user_39Wd73TWkWKHkCy6Ylie5";
 const message ="The form sent successfully! I'll contact you soon!";
-console.log("message", message)
+
 
 const Contacts = () => {
   const [names, setNames] = useState("");

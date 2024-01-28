@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import starrySky from "/public/starrysky.jpg";
-
+import spaceMan from "/public/spaceBuddy1.png"
 import MainTitle from "/components/Header/MainTitle.js";
 import Particles from "react-tsparticles";
 import Twinkle from "./twinkleStar.jsx";
@@ -72,7 +72,7 @@ function Header() {
               {" "}
               <Image
                 className={styles.Developer}
-                src="/spacebuddy1.png"
+                src={spaceMan}
                 alt="astronaut spaceman"
                 height={100}
                 width={100}
